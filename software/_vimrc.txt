@@ -1,0 +1,19 @@
+set expandtab
+set ts=4
+set sw=4
+set nobackup
+set vb
+set hlsearch
+colorscheme darkblue
+set autoindent
+
+set fileencodings=utf-8
+set guifont=JetBrains_Mono:h11
+syn on
+set nu
+
+behave xterm
+
+autocmd BufNewFile,BufRead Makefile,makefile set noexpandtab
+
+
