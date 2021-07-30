@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart(){
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per week'],
+                ['Grand theft auto V',     12],
+                ['Battleground',    4],
+                ['Talk show',       8],
+                ['request to play', 3],
+                ['Eurotruck 2',     1]
+            ]);
+
+            var options = {
+                title: 'My Computer game plan',
+                pieHole: 0.4,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+        </script>
+    </head>
+    <body>
+        <div id="donutchart" style="width: 1200px; height: 700px;"></div>
+    </body>
+</html>
