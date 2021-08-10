@@ -65,9 +65,4 @@ h1.title {
   font-weight: 600;
 }
 em { font-style: normal; font-weight: bold; background-color: yellow }
-body {
-	background: white;
-    font-family: 'Noto Sans KR', sans-serif;
-	padding-bottom: 8px;
-	margin: 0;
-}
+
