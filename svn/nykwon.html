@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["calendar"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+   function drawChart() {
+       var dataTable = new google.visualization.DataTable();
+       dataTable.addColumn({ type: 'date', id: 'Date' });
+       dataTable.addColumn({ type: 'number', id: 'Won/Loss' });
+       dataTable.addRows([
+
+[ new Date(2020,5,13), 0],
+[ new Date(2022,0,29), 1],
+[ new Date(2022,0,25), 1],
+[ new Date(2022,0,19), 1],
+[ new Date(2022,0,19), 1],
+[ new Date(2022,0,19), 1],
+[ new Date(2022,0,19), 1],
+[ new Date(2022,0,19), 1],
+[ new Date(2022,0,17), 1],
+[ new Date(2022,0,17), 1],
+[ new Date(2022,0,14), 1],
+[ new Date(2022,0,13), 1],
+[ new Date(2022,0,13), 1],
+[ new Date(2022,0,13), 1],
+[ new Date(2022,0,13), 1],
+[ new Date(2022,0,10), 1],
+[ new Date(2022,0,08), 1],
+[ new Date(2022,0,04), 1],
+[ new Date(2022,0,01), 1],
+[ new Date(2021,11,29), 1],
+[ new Date(2021,11,28), 1],
+[ new Date(2021,11,28), 1],
+[ new Date(2021,11,23), 1],
+[ new Date(2021,11,22), 1],
+[ new Date(2021,11,22), 1],
+[ new Date(2021,11,20), 1],
+[ new Date(2021,11,20), 1],
+[ new Date(2021,11,20), 1],
+[ new Date(2021,11,18), 1],
+[ new Date(2021,11,15), 1],
+[ new Date(2021,11,15), 1],
+[ new Date(2021,11,09), 1],
+[ new Date(2021,11,08), 1],
+[ new Date(2021,11,08), 1],
+[ new Date(2021,11,08), 1],
+[ new Date(2021,11,08), 1],
+[ new Date(2021,11,08), 1],
+        ]);
+
+       var chart = new google.visualization.Calendar(document.getElementById('calendar_basic'));
+
+       var options = {
+         title: "SVN Commit Activity",
+         height: 1350,
+       };
+
+       chart.draw(dataTable, options);
+   }
+    </script>
+  </head>
+  <body>
+    <div id="calendar_basic" style="width: 1000px; height: 1350px;"></div>
+  </body>
+</html>
+
