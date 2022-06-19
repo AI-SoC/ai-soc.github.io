@@ -1,0 +1,61 @@
+# jemdoc: menu{MENU}{index.html}
+= AI-Embedded Software-on-Chip Lab 
+
+knu_logo.jpg Welcome to AI-Embedded Software-on-Chip (AI-SoC) Lab. Our research group focuses on the following architecture to realize the accelerated intelligence in systems-software-on-chip by dynamic partial replacement of on-chip hardware and embedded software.
+~~~
+{}{img_left}{images/main.svg}{main}{730}{}{}
+~~~
+
+~~~
+{}{img_left}{images/youtube.jpg}{D. Park}{730}{}{https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EB%B0%95%EB%8C%80%EC%A7%84}
+~~~
+
+== For Prospective Applicants 
+- Open *Position in SoC\/Circuit Design Team* by Industrial Collaboration Program
+- Open *Industrial Internship Program* in domestic/international IT company 
+- Open *Visiting Scholar Position* by International Academia Collaboratoin Program 
+
+== News
+knu2.jpg
+- 2022-06 Our lab received a research grant (6th Division Co-PI) from *KNU AI Grand ICT Research Center*, focusing on *AI-based Smart Factory Virtualization*. 
+- 2022-05 Our lab received a research grant (PI) from *Minstry of Education*, focusing on *Intelligent Streamable AI Microservice Runtime Platform for Edge-Serverless Metaverse Infrastructure*.
+- 2022-05 Our lab received a research grant (Co-PI) from *Ministry of Science and ICT* toward establishing *Processing-in-Memory (PIM) Semiconductor Design Research Center* during 7 years.
+- 2022-04 *Prof. Park* was awarded with Legion of Merit by *Prime Minister of Korea Government* and nomiated as a man of merit in Korea Science and ICT memorial day.
+- 2022-04 *Mr. Hong*'s SCI-indexed journal paper was accepted in *Sensors (Q1, IF 3.576)* with Hybrid Deep Learning-based Lightweighted AI Autonomous Car Control Platform.  
+- 2022-04 Our lab received a research grant (PI) from *Ministry of Science and ICT*, focusing on *AI On-Demand Code Streamable Edge-Cloud Connected OpenAPI HW\/SW Execution Platform*. 
+- 2022-03 *Next Generation Research Group in Carnavicom* started to support our Lab with Industry-Academy Collaboration Grant.
+- 2022-03 Our Lab started to collaborate *Next Generation AI-MCU R&D* via Industry-Academy Program.
+- 2022-02 *Prof. Park* was nominated as Professor to teach Automotive On-Chip Embedded System\/Software for *Hyundai Motor* Group.
+- 2022-02 *Mr. Peter's FPGA-based DSP Accelerator paper* was accepted to *IEEE Access*. (SCIE Q1, IF 3.576)
+- 2022-01 *Artificial Intelligence (AI) Hardware Center* in Seoul National University started to support our Lab. 
+- 2022-01 *Undergraduate student (1st grade) Mr. Jang's journal paper* was accepted to *Electronics*. (SCIE Q2, IF 2.397)
+
+== Sponsored Active Research Grants
+Our research group has been sponsored from the national research fund (NRF), research institutes and various industrial companies. Welcome to contact us about the technology transfer, technical consulting, and discussion for future collaboration.
+- *AI Grand ICT Research Center* 6th Division for ICT Smart Factory Research, 2022-2029, IITP
+- *Streamable AI Microservice Runtime for Edge-Serverless Metaverse Infrastructure*, 2022-2025, NRF.
+- *AI Processing-in-Memory (PIM) Semiconductor Design Research Center*, 2022-2028, IITP.
+- *AI On-Demand Code Streamable OpenAPI HW\/SW Execution Platform*, 2022-2023, IITP. 
+- *Intensive School on Embedded System Software for Hyundai Motor Group*, 2022, HNGV.
+- *Metaverse Based Digital Healthcare Systems*, 2022, DHS.
+- *Next Generation AI-MCU Platform R&D Center* by Industry-Academy Student Fellowship, 2022, ABV.
+- *Distance-based Clusttering Algorithm for Lightweight LiDAR-based 3D Object Tracking Eye*, 2022, KNC.
+- *Multidisciplinary Research Training and Development Enterprise for AI and Semiconductor Technology*, 2022-2025, SNU.
+- *Embedded IoT Virtualization-based Digital-Twin Smart Fabrication*, 2021-2022, LS CNS. 
+- *Metamorphic Unstructured Validation/Verification for Analyzing Binary Code*, 2021-2025, IITP.
+- *Self-Organized Community Computing Platform for Resilient Environment*, 2018-2027, NRF.
+- *BK21 Four Project in School of Electronic and Electrical Engineering, KNU*, 2020-2028, NRF.
+- *IC Design Education Center (IDEC) EDA Software Tool License Support*, 2016-2022, IDEC.
+
+== Supported By 
+~~~
+{}{img_left}{images/sponsor.jpg}{Sponsors}{700}{}{}
+~~~
+
+
+== Contact
+#includeraw{contact.html}
+
+== Schedule
+#includeraw{schedule.html}
+
