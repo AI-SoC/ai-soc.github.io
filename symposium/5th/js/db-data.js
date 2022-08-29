@@ -52,11 +52,11 @@ DB[09] = new Array("","","","","","","","","1D-3","Continuous Image-based Fast G
 
 DB[10] = new Array("1E","color-oral-05","1E","Aug. 29, 2022 (Mon)","11:30 ~ 12:00","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Compiler, Simulator, Emulator","1E-1","Tool Command Languages basics & Simulation Control using Tcl Scripts","<b>Yonghun Lee (Kwonak Analog), Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/Cj4gKsVgRk4","1F");
 
-DB[11] = new Array("","","","","","","","","1E-2","Optimizing LLVM Transform Passes with Ensemble Reinforcement Learning for Reducing Runtime Memory Consumption","<b>Juneseo Chang (Seoul National University), Daejin Park</b> (Kyungpook National University, Korea)<br>","","1E-2.pdf","");
+DB[11] = new Array("","","","","","","","","1E-2","Optimizing LLVM Transform Passes with Ensemble Reinforcement Learning for Reducing Runtime Memory Consumption","<b>Juneseo Chang (Seoul National University), Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/F1n1QmCYxsA","");
 
 
 // Digital Signal Processing
-DB[12] = new Array("1F","color-oral-06","1F","Aug. 29, 2022 (Mon)","12:00 ~ 12:20","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Digital Signal Processing","IF-1","Linear Programming Basics","<b>Sungho Cho (LG Display), Daejin Park</b> (Kyungpook National University, Korea)<br>","","1F-1.pdf","1F");
+DB[12] = new Array("1F","color-oral-06","1F","Aug. 29, 2022 (Mon)","12:00 ~ 12:20","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Digital Signal Processing","IF-1","Linear Programming Basics","<b>Sungho Cho (LG Display), Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/wugFo5OD6n4","1F");
 
 DB[13] = new Array("","","","","","","","","1F-2","End of Symposium","","","","");
 
