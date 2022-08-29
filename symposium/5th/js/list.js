@@ -48,9 +48,9 @@ function writeData(list) {
 
 					if (list[j][12]!="") {
 						text +=
-							'          <div class="fwb"><a href="../../papers/'+list[j][12]+'" target="_blank">'+list[j][9]+'</a></div>' +
+							'          <div class="fwb"><a href="'+list[j][12]+'" target="_blank">'+list[j][9]+'</a></div>' +
 							'          <div class="belong "><span class="author">'+list[j][10]+'</span>'+list[j][11]+'</div></td>' +
-							'        <td class="video-paper"><a href="../../papers/'+list[j][12]+'" target="_blank"><img src="../img/video.png" width=25></a></td>' +
+							'        <td class="video-paper"><a href="'+list[j][12]+'" target="_blank"><img src="../img/video.png" width=25></a></td>' +
 							'      </tr>';
 					} else {
 						text +=
