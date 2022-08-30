@@ -33,8 +33,8 @@ function writeData(list) {
 					'    <tbody>' +
 					'      <tr>' +
 					'        <td scope="col" class="th-paper ">No.</td>' +
-					'        <td scope="col" class="th-paper tal pl-50"><span class="ml-50 pl-50">Title / Author(s) </span></td>' +
-					'        <td scope="col" class="th-paper tac video-paper">Video</td>' +
+					'        <td scope="col" class="th-paper tal pl-50"><span class="ml-50 pl-50">Topic / Lecturer(s) </span></td>' +
+					'        <td scope="col" class="th-paper tac video-paper">PDF</td>' +
 					'      </tr>';
 			}
 
