@@ -29,3 +29,7 @@ DB[03] = new Array("1C","color-oral-03","1C","Aug. 30, 2022","13:00 ~ 13:50","Ro
 
 DB[04] = new Array("","","","","","","","","1B-4","Version Control Concept","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day1_04_version_control.pdf","");
 
+// Git
+DB[05] = new Array("1D","color-oral-04","1D","Aug. 30, 2022","14:00 ~ 14:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","C Programming for Embedded Systems","1B-1","Building Multiple Files","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day1_05_multiple_files.pdf","1E");
+
+
