@@ -30,10 +30,18 @@ DB[03] = new Array("1C","color-oral-03","1C","Aug. 30, 2022","13:00 ~ 13:50","Ro
 DB[04] = new Array("","","","","","","","","1B-4","Version Control Concept","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day1_04_version_control.pdf","");
 
 // Git
-DB[05] = new Array("1D","color-oral-04","1D","Aug. 30, 2022","14:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","C Programming for Embedded Systems","1B-1","Building Multiple Files","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day1_05_multiple_files.pdf","1E");
+DB[05] = new Array("1D","color-oral-04","1D","Aug. 30, 2022","14:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Variable Allocation on Memory","1B-1","Building Multiple Files","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day1_05_multiple_files.pdf","1E");
 
 DB[06] = new Array("","","","","","","","","1D-2","Variable Liveness Scope","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day1_06_var_scope.pdf","");
 
 DB[07] = new Array("","","","","","","","","1D-3","Variable Allocation at Specific Address on Memory","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day1_07_variable_allocation.pdf","");
 
+
+// Git
+DB[08] = new Array("2A","color-oral-05","2A","Aug. 31, 2022","09:00 ~ 09:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Advanced C Programming","1B-1","Traversing Array via Pointer","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day2_01_array.pdf","2B");
+
+DB[09] = new Array("","","","","","","","","2A-2","Enumeration-based Constant Abstraction","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day2_02_enumeration.pdf","");
+
+
+DB[10] = new Array("","","","","","","","","2A-3","Pointing Everything by void*","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day2_03_void_pointer.pdf","");
 
