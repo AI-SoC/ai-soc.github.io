@@ -54,8 +54,13 @@ DB[13] = new Array("","","","","","","","","2B-2","Allocating Structured Multi-B
 DB[14] = new Array("","","","","","","","","2B-3","Representing Data on Memory as Various Views using union","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day2_07_union.pdf","");
 
 // Git
-DB[15] = new Array("3A","color-oral-07","3A","Sept. 1, 2022","09:00 ~ 09:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Code Memory and Data Memory","2B-1","Bit Representation","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day3_01_bit_representation.pdf","3B");
+DB[15] = new Array("3A","color-oral-07","3A","Sept. 1, 2022","09:00 ~ 11:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Code Memory and Data Memory","2B-1","Bit Representation","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day3_01_bit_representation.pdf","3B");
 
 DB[16] = new Array("","","","","","","","","2B-2","Layout Instruction on Code Memory, and Allocating Variables on Data Memory","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day3_02_memory_allocation.pdf","");
+
+// Git
+DB[17] = new Array("3B","color-oral-08","3B","Sept. 1, 2022","13:00 ~ 14:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Code Memory and Data Memory","3B-1","Bit Manipulation to Control Hardware","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day3_03_bit_manipulation.pdf","3C");
+
+DB[18] = new Array("","","","","","","","","3B-2","Hardware Memory Allocation to Access On-Chip Hardware via Memory Mapped I/O","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","day3_04_hardware_allocation.pdf","");
 
 
