@@ -17,14 +17,15 @@ PS = new Array();
 
 
 // Intro 
-DB[00] = new Array("1A","color-oral-01","1A","Sept. 02, 2022","09:00 ~ 10:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Cross Compilation Environment Installation","1A-1","TC275 Infineon Embedded Processors Development Environment","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","00_TC275_Getting_Started.pdf","1B");
+DB[00] = new Array("1A","color-oral-01","1A","Sept. 02, 2022","09:00 ~ 10:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Cross Compilation Environment Installation","1A-1","TC275 Infineon Embedded Processors Development Environment","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/00_TC275_Getting_Started.pdf","1B");
 
-DB[01] = new Array("","","","","","","","","1A-2","Infineon Getting Started Manual","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","Infineon-AURIX_Getting_Started_with_AURIX_Development_Studio-GettingStarted-v01_11-EN.pdf","");
+DB[01] = new Array("","","","","","","","","1A-2","Infineon Getting Started Manual","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/Infineon-AURIX_Getting_Started_with_AURIX_Development_Studio-GettingStarted-v01_11-EN.pdf","");
 
-DB[02] = new Array("","","","","","","","","1A-3","Infineon ShildBuddy Target Embedded Board","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","Infineon-ShieldBuddy_TC275-UM-v02_08-EN.pdf","");
+DB[02] = new Array("","","","","","","","","1A-3","Infineon ShildBuddy Target Embedded Board","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/Infineon-ShieldBuddy_TC275-UM-v02_08-EN.pdf","");
 
 // Tool
-DB[03] = new Array("1B","color-oral-02","1B","Sept. 02, 2022","11:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Infineon Embedded MCU Programming for GPIO","1B-1","General Purpose I/O Programming","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","01_TC275_GPIO.pdf","1C");
+DB[03] = new Array("1B","color-oral-02","1B","Sept. 02, 2022","11:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Infineon Embedded MCU Programming for GPIO","1B-1","General Purpose I/O Programming","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/01_TC275_GPIO.pdf","1C");
 
-DB[04] = new Array("","","","","","","","","1B-2","Infineon TC27X D-Step Processors User Manual","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","Infineon-TC27x_D-step-UM-v02_02-EN.pdf","");
-DB[05] = new Array("","","","","","","","","1B-2","YWRobot Easy Module Shiled Sensor/Actuator Board","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","ywrobot-easy-module-shield-v1.jpg","");
+DB[04] = new Array("","","","","","","","","1B-2","Infineon TC27X D-Step Processors User Manual","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/Infineon-TC27x_D-step-UM-v02_02-EN.pdf","");
+
+DB[05] = new Array("","","","","","","","","1B-2","YWRobot Easy Module Shiled Sensor/Actuator Board","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/ywrobot-easy-module-shield-v1.jpg","");
