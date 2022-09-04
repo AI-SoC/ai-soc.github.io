@@ -29,3 +29,11 @@ DB[03] = new Array("1B","color-oral-02","1B","Sept. 02, 2022","11:00 ~ 16:50","R
 DB[04] = new Array("","","","","","","","","1B-2","Infineon TC27X D-Step Processors User Manual","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/Infineon-TC27x_D-step-UM-v02_02-EN.pdf","");
 
 DB[05] = new Array("","","","","","","","","1B-2","YWRobot Easy Module Shiled Sensor/Actuator Board","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/ywrobot-easy-module-shield-v1.jpg","");
+
+// Intro
+DB[06] = new Array("2A","color-oral-03","2A","Sept. 05, 2022","09:00 ~ 11:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","External Interrupt-Driven Asynchronous Hardware-Software Interaction","2A-1","GPIO Interrupt-Driven Software Execution for TC275 Infineon Embedded Processors","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/02_TC275_Interrupt.pdf","2B");
+
+// Intro
+DB[07] = new Array("2B","color-oral-04","2B","Sept. 05, 2022","13:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Internal Interrupt-Driven Hardware-Software Interaction","2B-1","Timer Interrupt-Driven Periodic Software Execution for TC275 Infineon Embedded Processors","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/03_TC275_Timer.pdf","2C");
+
+
