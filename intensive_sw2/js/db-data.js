@@ -40,6 +40,6 @@ DB[07] = new Array("2B","color-oral-04","2B","Sept. 05, 2022","13:00 ~ 16:50","R
 DB[08] = new Array("3A","color-oral-05","3A","Sept. 06, 2022","09:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Sampling and Quantization for Interfacing Analog World","3A-1","ADC-based Voltage Sampling and Quantization for TC275 Infineon Embedded Processors","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/04_TC275_ADC.pdf","3A");
 
 // Intro
-DB[09] = new Array("4A","color-oral-06","4A","Sept. 07, 2022","09:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Driving Analog World using Digital Time-based Modulation","4A-1","PWM-based Energy Tranfer Moudulation for TC275 Infineon Embedded Processors","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/05_TC275_PWM.pdf","4A");
+DB[09] = new Array("4A","color-oral-06","4A","Sept. 07, 2022","09:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Driving Analog World using Digital Time-based Modulation","4A-1","PWM-based Energy Transfer Modulation for TC275 Infineon Embedded Processors","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/05_TC275_PWM.pdf","4A");
 
 
