@@ -43,7 +43,7 @@ DB[07] = new Array("3A","color-oral-04","3A","Sept. 15, 2022","09:00 ~ 16:50","R
 
 DB[08] = new Array("","","","","","","","","3A-2","Team 2: Adaptie LED Headlight and Smart Warning System","<b>Seungho Kim, Jihoon Kim, Sangbin Lee, Hyerim Lee, and Sewon Jang</b> (Hyundi Motor, Korea)<br>","","https://youtu.be/whRJIF9xvXE","", "mov");
 DB[09] = new Array("","","","","","","","","3A-3","Team 3: Driver Assistance System Considering the Safety of Passengers","<b>Teahoon Lim, Seonoh Jang, Yeaseul Cho, and Donghyeong Ryu</b> (Hyundi Motor, Korea)<br>","","https://youtu.be/rgX-jJie5_I","", "mov");
-DB[10] = new Array("","","","","","","","","3A-4","Team 4: Emergency Situation Perception and Recording System","<b>Eunseong Cho, Seungil Han, and Hyunji Chu</b> (Hyundi Motor, Korea)<br>","","slide/xxx.mov","", "mov");
+DB[10] = new Array("","","","","","","","","3A-4","Team 4: Emergency Situation Perception and Recording System","<b>Eunseong Cho, Seungil Han, and Hyunji Chu</b> (Hyundi Motor, Korea)<br>","","https://youtu.be/VkoW1Ng-pMM","", "mov");
 DB[11] = new Array("","","","","","","","","3A-5","Team 5: Mini-ADAS Development with Embeddeding System","<b>Younghoon Kim, Honggyu Lee, Hyungchan Cho, Sejeong Hong</b> (Hyundi Motor, Korea)<br>","","https://youtu.be/Ym0OIwe3Aeg","", "mov");
 
 
