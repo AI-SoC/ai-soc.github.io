@@ -38,13 +38,13 @@ DB[05] = new Array("","","","","","","","","2A-3","Generating Sound using Buzzer
 DB[06] = new Array("","","","","","","","","2A-4","Driving DC Motor based on PWM for Infineon TC275","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/04_TC275_PWM_Motor.pdf","", "pdf");
 
 // Intro 
-DB[07] = new Array("3A","color-oral-04","3A","Sept. 15, 2022","09:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Symposium on Embedded MCU Projects using Infineon TC275 Processors","3A-1","Team 1: Implementation of .... using Infineon TC275 Processors","<b>XYZ</b> (Hyundai Motor, Korea)<br>","","slide/xxx.pdf","3A", "mov", "pdf");
+DB[07] = new Array("3A","color-oral-04","3A","Sept. 15, 2022","09:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Symposium on Embedded MCU Projects using Infineon TC275 Processors","3A-1","Team 1: Ultrasonic Sensor-based Collison Avoidance Warning System for Automatic Parking Assistance","<b>Donghwan Kim, Jinseoung Kang, Hyunyoung Jang, and Jungmin Ryu</b> (Hyundai Motor, Korea)<br>","","https://youtu.be/qDybwhZTptY","3A", "mov");
 
 
-DB[08] = new Array("","","","","","","","","3A-2","Team 2: Impementation of .... using Infineon TC275 Processors","<b>XYZ</b> (Hyundi Motor, Korea)<br>","","slide/xxx.mov","", "mov");
-DB[09] = new Array("","","","","","","","","3A-3","Team 3: Impementation of .... using Infineon TC275 Processors","<b>XYZ</b> (Hyundi Motor, Korea)<br>","","slide/xxx.mov","", "mov");
-DB[10] = new Array("","","","","","","","","3A-4","Team 4: Impementation of .... using Infineon TC275 Processors","<b>XYZ</b> (Hyundi Motor, Korea)<br>","","slide/xxx.mov","", "mov");
-DB[11] = new Array("","","","","","","","","3A-5","Team 5: Impementation of .... using Infineon TC275 Processors","<b>XYZ</b> (Hyundi Motor, Korea)<br>","","slide/xxx.mov","", "mov");
+DB[08] = new Array("","","","","","","","","3A-2","Team 2: Adaptie LED Headlight and Smart Warning System","<b>Seungho Kim, Jihoon Kim, Sangbin Lee, Hyerim Lee, and Sewon Jang</b> (Hyundi Motor, Korea)<br>","","https://youtu.be/whRJIF9xvXE","", "mov");
+DB[09] = new Array("","","","","","","","","3A-3","Team 3: Driver Assistance System Considering the Safety of Passengers","<b>Teahoon Lim, Seonoh Jang, Yeaseul Cho, and Donghyeong Ryu</b> (Hyundi Motor, Korea)<br>","","https://youtu.be/rgX-jJie5_I","", "mov");
+DB[10] = new Array("","","","","","","","","3A-4","Team 4: Emergency Situation Perception and Recording System","<b>Eunseong Cho, Seungil Han, and Hyunji Chu</b> (Hyundi Motor, Korea)<br>","","slide/xxx.mov","", "mov");
+DB[11] = new Array("","","","","","","","","3A-5","Team 5: Mini-ADAS Development with Embeddeding System","<b>Younghoon Kim, Honggyu Lee, Hyungchan Cho, Sejeong Hong</b> (Hyundi Motor, Korea)<br>","","https://youtu.be/Ym0OIwe3Aeg","", "mov");
 
 
 
