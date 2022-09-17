@@ -17,25 +17,25 @@ PS = new Array();
 
 
 // Intro 
-DB[00] = new Array("1A","color-oral-01","1A","Sept. 08, 2022","09:00 ~ 13:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Ambient Activity Monitoring","1A-1","Measuring Ambient Activity based on Time of Flight using Time-to-Digital Converion for TC275 Infineon Embedded Processors","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/00_TC275_Ultrasonic.pdf","1A", "pdf");
+DB[00] = new Array("1A","color-oral-01","1A","Sept. 08, 2022","09:00 ~ 13:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Ambient Activity Monitoring","1A-1","Measuring Ambient Activity based on Time of Flight using Time-to-Digital Converion for TC275 Infineon Embedded Processors","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","","1A", "pdf");
 
 
-DB[01] = new Array("1B","color-oral-02","1B","Sept. 14, 2022","14:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Team Project Guide","1A-1","Collaborative Development, Documentation, and Presentation for Successful Projects based on ECU with Embedded On-Chip Software","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/project.pdf","1B", "pdf");
+DB[01] = new Array("1B","color-oral-02","1B","Sept. 14, 2022","14:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Team Project Guide","1A-1","Collaborative Development, Documentation, and Presentation for Successful Projects based on ECU with Embedded On-Chip Software","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","","1B", "pdf");
 
-DB[02] = new Array("","","","","","","","","1B-2","Recommented Sample Projects","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/project_examples.xlsx","", "pdf");
+DB[02] = new Array("","","","","","","","","1B-2","Recommented Sample Projects","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","","", "pdf");
 
 
 // Intro 
-DB[03] = new Array("2A","color-oral-03","2A","Sept. 14, 2022","09:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Infineon TC275 ECU-based Various Projects","2A-1","Driving Analog World with Time-to-Digital Modulation - Digital DAC to Drive Speaker for Digital Amplifier","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/01_TC275_PWM2ANALOG.pdf","2A", "pdf");
+DB[03] = new Array("2A","color-oral-03","2A","Sept. 14, 2022","09:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Infineon TC275 ECU-based Various Projects","2A-1","Driving Analog World with Time-to-Digital Modulation - Digital DAC to Drive Speaker for Digital Amplifier","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","","2A", "pdf");
 
 
-DB[04] = new Array("","","","","","","","","2A-2","Distributed Computing and Robust Safe Software Execution with Multi Cores on Infineon TC275","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/02_TC275_Multicore.pdf","", "pdf");
+DB[04] = new Array("","","","","","","","","2A-2","Distributed Computing and Robust Safe Software Execution with Multi Cores on Infineon TC275","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","","", "pdf");
 
 
-DB[05] = new Array("","","","","","","","","2A-3","Generating Sound using Buzzer based on PWM for Infineon TC275","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/03_TC275_BUZZER.pdf","", "pdf");
+DB[05] = new Array("","","","","","","","","2A-3","Generating Sound using Buzzer based on PWM for Infineon TC275","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","","", "pdf");
 
 
-DB[06] = new Array("","","","","","","","","2A-4","Driving DC Motor based on PWM for Infineon TC275","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","slide/04_TC275_PWM_Motor.pdf","", "pdf");
+DB[06] = new Array("","","","","","","","","2A-4","Driving DC Motor based on PWM for Infineon TC275","<b>Daejin Park</b> (Kyungpook National University, Korea)<br>","","","", "pdf");
 
 // Intro 
 DB[07] = new Array("3A","color-oral-04","3A","Sept. 15, 2022","09:00 ~ 16:50","Room A","Lecturer: Daejin Park (Kyungpook National University, Korea)","Symposium on Embedded MCU Projects using Infineon TC275 Processors","3A-1","Team 1: Ultrasonic Sensor-based Collison Avoidance Warning System for Automatic Parking Assistance","<b>Donghwan Kim, Jinseoung Kang, Hyunyoung Jang, and Jungmin Ryu</b> (Hyundai Motor, Korea)<br>","","https://youtu.be/qDybwhZTptY","3A", "mov");
