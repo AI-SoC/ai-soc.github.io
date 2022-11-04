@@ -35,7 +35,7 @@ DB[04] = new Array("","","","","","","","","1B-3","Adaptive Active Noise Cancell
 // Digital Twin
 DB[05] = new Array("1C","color-oral-03","1C","Oct. 28, 2022 (Friday)","10:15 ~ 10:45","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Digital Twin","1C-1","TinyML: Machine Learning World for Tiny Things","<b>Jisu Kwon, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/JXpsQSndHOc","1D");
 
-DB[06] = new Array("","","","","","","","","1C-2","Developing MATLAB Apps Using the Model-View-Controller Pattern: Random Data Generation and Statistical Analysis","<b>Seungmin Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/uwWYIetVdUI","");
+DB[06] = new Array("","","","","","","","","1C-2","Developing MATLAB Apps Using the Model-View-Controller Pattern: Random Data Generation and Statistical Analysis","<b>Seungmin Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/zOW6cBO2A40","");
 
 
 // AI-Enabled Algorithm
