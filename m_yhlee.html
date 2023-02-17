@@ -4,7 +4,7 @@
 <head><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Titillium Web">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="script/aisoc.css" type="text/css" />
-<title>Yonghun Lee (Integrated Ph.D. Candidate, Senior Researcher @ Kwanak Analog)</title>
+<title>Yonghun Lee (Integrated Ph.D. Candidate, Senior Researcher @ VisonNext)</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -60,7 +60,7 @@
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Yonghun Lee (Integrated Ph.D. Candidate, Senior Researcher @ Kwanak Analog)</h1>
+<h1>Yonghun Lee (Integrated Ph.D. Candidate, Senior Researcher @ VisonNext)</h1>
 </div>
 <table class="imgtable"><tr><td>
 <img src="images/yhlee.jpg" alt="main" width="100px" />&nbsp;</td>
@@ -81,7 +81,7 @@ E-mail: <i>redson0517</i> [@] gmail[DOT] com <br />
 <h2>Research Topic</h2>
 <p><img src=member/yhlee_topic1.jpg align=right width=300> Most verilog verification flows are iterative cylce of design-compile-simulation-debugging and updating. 1) Write the source code using verilog for the circuit. 2) Creating the test-benchs involves test cases and checker. 3) Run the simulation. 4) Debugging and updating the design including testbenches. Turn around time of the design cycle takes much time when the testbenches changed or added including test cases and checker. Tcl-based verification code for dynamically could replace a verilog stimuls while the simulation is running. Tcl verification code in the simulator When the test stimulus changed, the turnaround time increases significantly, because all designs including DUT need recompling. To solve the long iterative simulation time, the proposed verification flows use the Tcl based verification code generation for dynamically from previous simulation snapshot. Our proposed verification flow is shown in Fig. 2. 1) Write source code including DUT and testbenchs using verilog. Testbenchs are only including the common code such as clock source and DUT instanciation. 2) Verilog task and function for driving stimuls and checking the results is implemented by Tcl based verification code which is pluggable on the simulation run time. This pulggable code could be added or deleted in the simulation run time without recompiling source code. Simulator could skip the compile process, just like running executable batch files instead of new compiling each time while you run new simulation. 3) We are able to save the full state of the simulation snapshot during runtime to a file, restore it at a later time and continue running simulation from the same point. If several test cases are different only after the simulation warms up, you may run the simulation up to end of its warm-up period only once, save the sate and then reload it for every test cases. 4) During checking and updating period, reloading the snapshot has ability to roll-back to previous state 2) or 3).  </p>
 <h2>Publications</h2>
-<h3>Journal Publications</h3>
+<h3>Journal Publications </h3>
 <ul>
 <li><p>Yonghun Lee and Daejin Park. <b>Fast Verilog Simulation using Tcl-based Verification Code Generation for Dynamically Reloading from Pre-Simulation Snapshot (Under Review)</b> Journal of the Korea Institute of Information and Communication Engineering, 2023.</p>
 </li>
