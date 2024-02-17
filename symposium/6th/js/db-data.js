@@ -46,7 +46,7 @@ DB[08] = new Array("","","","","","","","","1D-3","RTL8211-based Ethernet Schema
 
 // Compiler Simulation
 
-DB[09] = new Array("1E","color-oral-05","1E","Oct. 28, 2022 (Friday)","11:30 ~ 12:00","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Compiler, Simulator, Emulator","1E-1","SystemVerilog Direct Programming Interface (DPI) Basic and Example","<b>Yonghun Lee (Kwonak Analog), Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/UeKU5wEvy3Q","1F");
+DB[09] = new Array("1E","color-oral-05","1E","Oct. 28, 2022 (Friday)","11:30 ~ 12:00","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Compiler, Simulator, Emulator","1E-1","SystemVerilog Direct Programming Interface (DPI) Basic and Example","<b>Yonghun Lee (Kwonak Analog), Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/Ry0EjKyOMTk","1F");
 
 DB[10] = new Array("","","","","","","","","1E-2","RLlib: Highly Scalable Reinforcement Learning Framework","<b>Juneseo Chang (Seoul National University), Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/F1n1QmCYxsA","");
 
