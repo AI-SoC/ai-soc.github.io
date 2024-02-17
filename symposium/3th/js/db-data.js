@@ -43,18 +43,16 @@ DB[08] = new Array("1D","color-oral-04","1D","May. 22, 2022 (Friday)","10:45 ~ 1
 
 DB[09] = new Array("","","","","","","","","1D-2","Runtime Virtual Lane Prediction Based on Inverse Perspective Transformation and Machine Learning for Lane Departure Warning in Low-Power Embedded Systems","<b>Sunghoon Hong, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/ScLIaNtTAzs","");
 
-DB[10] = new Array("","","","","","","","","1D-3","Runtime Embedded SW Malfunction Detection using I/V Pattern Matching Profile","<b>Sanghoon Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/mODwxF7DpDA","");
-
 
 // EDA
-DB[11] = new Array("1E","color-oral-05","1E","May. 22, 2022 (Friday)","11:30 ~ 12:00","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Middleware Simulator Compiler EDA","1E-1","Introduction to Processor Optimization Development ","<b>Nayoung Kwon, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/LN1qbJut1fY","1F");
+DB[10] = new Array("1E","color-oral-05","1E","May. 22, 2022 (Friday)","11:30 ~ 12:00","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Middleware Simulator Compiler EDA","1E-1","Introduction to Processor Optimization Development ","<b>Nayoung Kwon, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/LN1qbJut1fY","1F");
 
-DB[12] = new Array("","","","","","","","","1E-2","Applications and Countermeasures of Side Channel Attacks","<b>Juneseo Chang, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/Om9TBrXIZS8","");
+DB[11] = new Array("","","","","","","","","1E-2","Applications and Countermeasures of Side Channel Attacks","<b>Juneseo Chang, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/Om9TBrXIZS8","");
 
-DB[13] = new Array("","","","","","","","","1E-3","Understanding of CDC (Clock Domain Crossing) Issue and Solutions in Digital Logic Design","<b>Juneseo Chang, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/xrJJ0ChjRw4","");
+DB[12] = new Array("","","","","","","","","1E-3","Understanding of CDC (Clock Domain Crossing) Issue and Solutions in Digital Logic Design","<b>Juneseo Chang, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/xrJJ0ChjRw4","");
 
 
-DB[14] = new Array("","","","","","","","","1E-4","End of Symposium","","","","");
+DB[13] = new Array("","","","","","","","","1E-4","End of Symposium","","","","");
 
 
 
