@@ -21,16 +21,15 @@ DB[00] = new Array("1A","color-oral-01","1A","Feb. 28, 2024 (Friday)","09:00 ~ 0
 
 DB[01] = new Array("","","","","","","","","1A-2","Self-Organizing Movement Control for Large-Scaled Autonomous Vehicle Collision Congestion Mitigation","<b>Youngwon Jeon, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
 
+DB[02] = new Array("","","","","","","","","1A-3","Adaptive Air Conditioner Control by Agent-based Dynamic Simulation","<b>Yujeong Son, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
+
 
 // SoC
-DB[02] = new Array("1B","color-oral-02","1B","Feb. 28, 2024 (Friday)","09:30 ~ 10:30","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","System-on-Chip","1B-1","Heterogeneous Host-Accelerator Linking Layer for Resource Fully-Utilization","<b>Jisu Kwon, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","1C");
+DB[03] = new Array("1B","color-oral-02","1B","Feb. 28, 2024 (Friday)","09:30 ~ 10:30","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","System-on-Chip","1B-1","Heterogeneous Host-Accelerator Linking Layer for Resource Fully-Utilization","<b>Jisu Kwon, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","1C");
 
-DB[03] = new Array("","","","","","","","","1B-2","Pattern based Input Data Sorting in CSNN Hardware Accelerator for Low Power High Speed in Light-weighted Embedded Board","<b>Heejee Yun, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
+DB[04] = new Array("","","","","","","","","1B-2","Pattern based Input Data Sorting in CSNN Hardware Accelerator for Low Power High Speed in Light-weighted Embedded Board","<b>Heejee Yun, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
 
-DB[04] = new Array("","","","","","","","","1B-3","Enabling Seamless AI Acceleration","<b>Seunghyun Park, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
-
-DB[05] = new Array("","","","","","","","","1B-4","FPGA Implementation of CNN Accelerated RISC-V Co-Processors","<b>Minkyu Jang, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
-
+DB[05] = new Array("","","","","","","","","1B-3","Enabling Seamless AI Acceleration","<b>Seunghyun Park, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
 
   
 // Digital Twin
