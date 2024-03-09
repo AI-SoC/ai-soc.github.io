@@ -4,7 +4,7 @@
 <head><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Titillium Web">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="script/aisoc.css" type="text/css" />
-<title>In-Depth Re-Thinking about Electronic Computer Systems </title>
+<title>Minjung Kim (Undergraduate Student)</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -31,7 +31,7 @@
 <div class="menu-item"><a href="l_patents.html">Patents</a></div>
 <div class="menu-category">Teaching</div>
 <div class="menu-item"><a href="l_courses.html">Courses</a></div>
-<div class="menu-item"><a href="l_study.html" class="current">Study</a></div>
+<div class="menu-item"><a href="l_study.html">Study</a></div>
 <div class="menu-item"><a href="c_lpsoc.html">Low&nbsp;Power&nbsp;SoC</a></div>
 <div class="menu-item"><a href="c_cprog.html">C&nbsp;Programming</a></div>
 <div class="menu-item"><a href="c_dsp.html">DSP</a></div>
@@ -55,7 +55,7 @@
 <div class="menu-item"><a href="m_jyjung.html">(M.S.)&nbsp;J.&nbsp;Y.&nbsp;Jeong</a></div>
 <div class="menu-item"><a href="m_dkjung.html">(M.S.)&nbsp;D.&nbsp;K.&nbsp;Jung</a></div>
 <div class="menu-item"><a href="m_mjkim.html">(M.S.)&nbsp;M.&nbsp;J.&nbsp;Kim</a></div>
-<div class="menu-item"><a href="m_bijeong.html">(M.S.)&nbsp;B.&nbsp;I.&nbsp;Jeong</a></div>
+<div class="menu-item"><a href="m_bijeong.html" class="current">(M.S.)&nbsp;B.&nbsp;I.&nbsp;Jeong</a></div>
 <div class="menu-item"><a href="m_jybyeon.html">(M.S.)&nbsp;J.&nbsp;Y.&nbsp;Byeon</a></div>
 <div class="menu-item"><a href="m_ghjeon.html">(B.S.)&nbsp;G.&nbsp;H.&nbsp;Jeon</a></div>
 <div class="menu-item"><a href="m_jsjang.html">(B.S.)&nbsp;J.&nbsp;S.&nbsp;Chang</a></div>
@@ -67,67 +67,43 @@
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>In-Depth Re-Thinking about Electronic Computer Systems </h1>
+<h1>Minjung Kim (Undergraduate Student)</h1>
 </div>
-<h2>System Engineering</h2>
-<div class="infoblock">
-<div class="blockcontent">
-<p>6 Members: Seongho, Junghyun, Yonghoon, Dongkyu, Suhwan, Jaeyong</p>
+<table class="imgtable"><tr><td>
+<img src="images/mjkim.jpg" alt="main" width="100px" />&nbsp;</td>
+<td align="left"><p>Undergraduate Student, Embedded System Architect<br /> 
+<a href="http://ai-soc.github.io">AI-Embedded System/Software on Chip (AI-SoC) Lab</a><br />
+School of Electronics Engineering, Kyungpook National University <br />
+Phone: +82 053 940 8648 <br />
+E-mail: <i>gms05143</i> [@] naver[DOT] com <br /> 
+[<a href="https://sites.google.com/view/inbetweener/home">Homepage</a>] [<a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=ko&amp;user=tQ4ZrKAAAAAJ">Google Scholar</a>] [<a href="svn/mjkim.html">SVN</a>]</p>
+</td></tr></table>
+<h2>Repository Commit History </h2>
+<table class="imgtable"><tr><td>
+<img src="member/mjkim_svn.jpg" alt="main" width="700px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h2>Introduction</h2>
+<h3>Full Bio Sketch </h3>
+<p>Mr. Kim is about to graduate from electronic engineering in Kyungpook National University. He is currently B.S student at ai-soc laboratory. His research interests include overcoming the limits of Embedded System. His recent study is about deadline scheduling algorithm and memory saving technique using struct bit field. Also, he conducts research about implementing hypervisor in MCU, by jumping to function pointer. His future work will be about safety techniques of ARM processors such as Failsafe and Trustzone. And also memory saving techniques using Scratchpad is also his interests. His final goal is to implement safe hypervisor in Embedded MCU.</p>
+<h2>Research Topic</h2>
+<h3>Shallow OS: Deadline Scheduling &amp; struct bit field</h3>
+<p><img src=member/mjkim_topic1.jpg align=right width=300> In an Embedded environment, code modification is not possible at runtime, and the available resources are limited due to its small size. In this paper, we propose some methods to overcome these limitations. One is deadline scheduling. Through deadline scheduling, we can predict when the task will finish. For concerns about starvation, we made a new variable and handle the task to not starve. Other advantage is that we can finish high-priority task faster. Another proposal is the struct bit field. By implementing a bit field, we can use resources more efficiently. We also considered overhead by adding a bit field, which contains additional bitwise operation. We achieved a 50% reduction in memory usage without much difference in execution time.</p>
+<h3>Multi OS on Lightweighted MCUs</h3>
+<p><img src=member/mjkim_topic2.jpg align=right width=300> Unlike the way that only single applications were uploaded to the existing MCU, I downloaded two discrete projects named OS1 and OS2, which I made to act as OS. Each OS has discrete memory sections in both SRAM and flash, which ensure safety. Work for context switching takes place immediately before and after jumping to the Monitoring app. In the function for context switching, not only context save and restore, but also I/O device virtualization occurs. By using I/O virtualization, each OS will be able to feel as if it is exclusively using an I/O device during execution time. </p>
+<h3>Dynamic Round-Robin Scheduling on Bare-Metal Shallow Multi-OS</h3>
+<p><img src=member/mjkim_topic3.jpg align=right width=300> In recent years, there has been a tendency to integrate functions using a small number of microcontrollers instead of using multiple microcontrollers in various environments. In order to support this flow, the need for a hypervisor that can use resources light and efficiently has emerged. In this paper, we propose hypervisor using dynamic round robin that can fluidly adjust the time quantum according to the urgent of each OS. In addition, a monitor mode was created to manage resources between each OS, and an ultra-light context switch was added to the monitor mode to increase responsiveness while managing multiple OS. When using the system proposed in this paper, the execution time of the test code decreased by about 36 percent compared to the traditional round-robin. Moreover, in terms of power, an average gain of about 3mA was achieved, and it was found that the ultra-light context switch uses only about 5 percent of the cycle compared to FreeRTOS.</p>
+<h2>Publications</h2>
+<h3>Conference Publications (Intl. 2)</h3>
 <ul>
-<li><p>System Dynamics Analysis</p>
-</li>
-<li><p>Control Optimizations</p>
-</li>
-<li><p>Differential, Difference Equation, Laplace Analysis</p>
-</li>
-<li><p>C-based Simulation</p>
+<li><p>Minjung Kim and Daejin Park. <b>Efficient Execution of On-Chip Embedded Software Using Pre-Emulation on Shallow OS</b> In 14th International Conference on Mobile Computing and Ubiquitous Networking (ICMU 2023), 2023. </p>
 </li>
 </ul>
-</div></div>
-<h2>Understanding VLSI SoC  </h2>
-<div class="infoblock">
-<div class="blockcontent">
-<p>7 Members: Dongkyu, Myeongjin, Seungmin, Jisu, Heuijee, Nayoung, Seunghyun </p>
+<h3>Participation in International Conference</h3>
 <ul>
-<li><p>SoC Design Methodology-based System Classification</p>
-</li>
-<li><p>Why Power Consumption in VLSI SoC ?</p>
-</li>
-<li><p>Dynamically Induced Resistance</p>
-</li>
-<li><p>R-C Reactive Inertial Current</p>
+<li><p>IEEE ICMU 2023, Kyoto, Japan </p>
 </li>
 </ul>
-</div></div>
-<h2>Embedded System Software</h2>
-<div class="infoblock">
-<div class="blockcontent">
-<p>1 Members: Dongkyu Jung</p>
-<ul>
-<li><p>Reconfiguration of HW by Programming SW</p>
-</li>
-<li><p>Memory Allocation on Memory Segment, Why Stack, Heap, Data Section are Allcated like this ?</p>
-</li>
-</ul>
-</div></div>
-<h2>C Compiler Collection</h2>
-<div class="infoblock">
-<div class="blockcontent">
-<p>1 Members: Juneseo Chang</p>
-<ul>
-<li><p>Basic Paths by Compiler Ecosystems</p>
-</li>
-</ul>
-</div></div>
-<h2>Processor Architecture</h2>
-<div class="infoblock">
-<div class="blockcontent">
-<p>1 Members: Seunghyun</p>
-<ul>
-<li><p>Instruction Set Architecture</p>
-</li>
-</ul>
-</div></div>
+<p>Last Updated, 2024.2.18</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>
