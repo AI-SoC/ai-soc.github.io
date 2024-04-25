@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* font CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto');
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Regular.eot');
+  src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Roboto-Regular.svg#Roboto-Regular') format('svg'),
+       url('Roboto-Regular.ttf') format('truetype'),
+       url('Roboto-Regular.woff') format('woff'),
+       url('Roboto-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('Lato-Regular.eot');
+  src: url('Lato-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Lato-Regular.svg#Lato-Regular') format('svg'),
+       url('Lato-Regular.ttf') format('truetype'),
+       url('Lato-Regular.woff') format('woff'),
+       url('Lato-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('OpenSans-Regular.eot');
+  src: url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+       url('OpenSans-Regular.svg#OpenSans-Regular') format('svg'),
+       url('OpenSans-Regular.ttf') format('truetype'),
+       url('OpenSans-Regular.woff') format('woff'),
+       url('OpenSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
