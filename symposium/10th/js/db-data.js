@@ -54,8 +54,10 @@ DB[11] = new Array("1E","color-oral-05","1E","May. 2, 2024 (Thursday)","11:00 ~ 
 
 DB[12] = new Array("","","","","","","","","1E-2","Hypervised MCU structure for optimizing AI execution","<b>Minjung Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/ucZEOXVy9Kw","");
 
+DB[13] = new Array("","","","","","","","","1E-2","On-cloud Code Streaming-based Firmware Partial Update for Embedded Edge Device","<b>Dongkyu Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/ucZEOXVy9Kw","");
 
-DB[13] = new Array("","","","","","","","","1E-3","End of Symposium","","","","");
+
+DB[14] = new Array("","","","","","","","","1E-3","End of Symposium","","","","");
 
 
 
