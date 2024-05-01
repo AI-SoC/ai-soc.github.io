@@ -36,7 +36,7 @@ DB[05] = new Array("","","","","","","","","1B-3","Improvements in Computational
 DB[06] = new Array("1C","color-oral-06","1C","May. 2, 2024 (Thursday)","10:30 ~ 10:45","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Digital Twin-based Digital Signal Processing","IC-1","Projection Data Analysis and Noise Suppression Filter Algorithm for Height Level Sensor","<b>Seungmin Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","1D");
 
 
-DB[07] = new Array("","","","","","","","","1C-2","IBC based Mutiuser Recognition Touch System","<b>Seunghyun Park, Daejin Park</b> (LG Display, Kyungpook National University, Korea)<br>","","https://youtu.be/WONnOsengzo","");
+DB[07] = new Array("","","","","","","","","1C-2","Expanding simulation environment through Verilog PLI","<b>Yujeong Son, Daejin Park</b> (LG Display, Kyungpook National University, Korea)<br>","","https://youtu.be/WONnOsengzo","");
 
 // AI-Enabled Algorithm
 
