@@ -4,7 +4,7 @@
 <head><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Titillium Web">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="script/aisoc.css" type="text/css" />
-<title>Gihyeon Jeon (Graduate Student Candidate)</title>
+<title>Gihyeon Jeon (M.S Graduate Student)</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -67,16 +67,16 @@
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Gihyeon Jeon (Graduate Student Candidate)</h1>
+<h1>Gihyeon Jeon (M.S Graduate Student)</h1>
 </div>
 <table class="imgtable"><tr><td>
 <img src="images/ghjeon.jpg" alt="main" width="100px" />&nbsp;</td>
-<td align="left"><p>Undergraduate Student (B.S), Embedded System-on-Chip Integrator<br /> 
+<td align="left"><p>Master Graduate Student (M.S), Embedded System-on-Chip Integrator<br /> 
 <a href="http://ai-soc.github.io">AI-Embedded System/Software on Chip (AI-SoC) Lab</a><br />
 School of Electronics Engineering, Kyungpook National University <br />
 Phone: +82 053 940 8648 <br />
 E-mail: <i>zxc34322</i> [@] naver[DOT] com <br /> 
-[<a href="https://sites.google.com/view/ghjeon">Homepage</a>] [<a href="https://scholar.google.co.kr/citations?user=YHU8DeAAAAAJ&amp;hl=ko">Google Scholar</a>] [<a href="svn/ghjeon.html">SVN</a>]</p>
+[<a href="https://sites.google.com/view/ghjeon">Homepage</a>] [<a href="https://scholar.google.co.kr/citations?user=YHU8DeAAAAAJ&amp;hl=ko">Google Scholar</a>] [<a href="svn/ghjeon.html">SVN</a>] [<a href="member/ghjeon_cv.pdf">CV</a>]</p>
 </td></tr></table>
 <h2>Repository Commit History </h2>
 <table class="imgtable"><tr><td>
@@ -89,9 +89,10 @@ E-mail: <i>zxc34322</i> [@] naver[DOT] com <br />
 <h3>Ternary Computation on VLSI</h3>
 <p><img src=member/ghjeon_topic1.jpg align=right width=300> With the rapid advancement of artificial intelligence and AI technologies, there has been a significant increase in operational workloads. Consequently, there is a need to handle these increased workloads within a fixed and precise timeframe. Anticipating that representing large numbers with fewer digits could increase operation speed, I constructed ternary logic gates and used them to create a ternary ripple carry adder. To construct this system, I employed Verilog RTL simulation and PSpice simulation. In PSpice, I designed each logic gate and measured their delay times. Using Verilog VPI, I conducted an overall performance comparison of the adders. The results confirmed that the designed ternary ripple carry adder exhibited approximately 75% better performance compared to the binary ripple carry adder. Due to the faster operation speed, I assumed that there would be a range where energy consumption is more advantageous and calculated that range. In the future, I plan to leave room for further work, such as designing layouts or researching ternary logic gates that do not follow the conventional form of binary logic gates.</p>
 <h3>Scratch Pad Memory (SPM) Controller</h3>
-<p><img src=member/ghjeon_topic2.jpg align=right width=500> To overcome the large area and energy consumption of cache memory, the scratchpad is considered in the LMStr (Local Memory Store) structure. Various measures are prepared to overcome the fragmentation issue that arises in this context, and a performance comparison is conducted. The performance is evaluated based on the SST (Structural Simulation Toolkit).</p>
-<p>Cache memory, being controlled by hardware, incurs significant hardware burden and power consumption. This led to the emergence of scratchpad memory. However, scratchpad memory, being software-controlled, increases the burden on programmers and compilers. Therefore, the use of scratchpad memory based on local memory store (LMStr) has been proposed to reduce the burden on programmers and compilers due to conventional scratchpad memory. However, this structure cannot be free from the fragmentation problem due to storing variable block sizes in the data storage space. As a method to use the same memory space more efficiently, I propose an LMStr structure that applies paging. This structure stores data blocks of a fixed size, not variable size, thus it is free from external fragmentation and has a higher hit ratio due to data locality.
-And the proposed structure is tested in the gem5 simulation environment. To simulate this structure in gem5, a new structure that does not affect the results of the simulation enables this and allows obtaining the desired outcomes.</p>
+<p><img src=member/ghjeon_topic2.jpg align=right width=500> To overcome the large area and energy consumption of cache memory, the scratchpad is considered in the LMStr (Local Memory Store) structure. Various measures are prepared to overcome the fragmentation issue that arises in this context, and a performance comparison is conducted. The performance is evaluated based on the SST (Structural Simulation Toolkit). Cache memory, being controlled by hardware, incurs significant hardware burden and power consumption. This led to the emergence of scratchpad memory. However, scratchpad memory, being software-controlled, increases the burden on programmers and compilers. Therefore, the use of scratchpad memory based on local memory store (LMStr) has been proposed to reduce the burden on programmers and compilers due to conventional scratchpad memory. However, this structure cannot be free from the fragmentation problem due to storing variable block sizes in the data storage space. As a method to use the same memory space more efficiently, I propose an LMStr structure that applies paging. This structure stores data blocks of a fixed size, not variable size, thus it is free from external fragmentation and has a higher hit ratio due to data locality. And the proposed structure is tested in the gem5 simulation environment. To simulate this structure in gem5, a new structure that does not affect the results of the simulation enables this and allows obtaining the desired outcomes.</p>
+<h3>Compiler-Assisted Multithreaded SPM Management</h3>
+<p><img src=member/ghjeon_topic3.jpg align=right width=200> Unlike cache memory, scratchpad memory is controlled by the user and software. Although it is true that it can be difficult for users to handle, it also comes with advantages. Unlike cache memory, it allows for addressable access, giving users flexibility in accessing it. In specific situations such as with automotive MCUs, IO processing increases significantly. Since IO processing consumes a lot of time, issues related to shared memory access in multithreading must be handled carefully.
+Therefore, in special situations with frequent IO communication, scratchpad memory is treated as shared memory, and access issues are addressed accordingly.</p>
 <h2>Publications</h2>
 <h3>Journal Publication</h3>
 <ul>

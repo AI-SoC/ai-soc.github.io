@@ -79,23 +79,28 @@ E-mail: <i>whffk0254</i> [@] gmail[DOT] com <br /> </p>
 </td></tr></table>
 <h2>Repository Commit History </h2>
 <table class="imgtable"><tr><td>
-<img src="member/jhkim_svn.jpg" alt="main" width="700px" />&nbsp;</td>
+<img src="member/hjlee_svn.jpg" alt="main" width="700px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <h2>Introduction</h2>
 <h3>Full Bio Sketch </h3>
 <p>Mr. Jeon is currently doing his undergraduate degree in Electronics Engineering at Kyungpook National University, Daegu, Republic of Korea. His research interests covers the mission-critical automotive/industrial embedded systems and software for highly robust control systems, specially in AI-Stacked object detection systems. </p>
 <h2>Research Topic</h2>
-<h3>YOLOv8 Automatic Weapon Aiming Systems </h3>
-<p><img src=member/jhkim_topic1.jpg align=right width=300> </p>
+<h3>YOLOv8 Automatic Weapon Control with Edge-Cloud Integrated Look-Ahead Movement Estimator </h3>
+<p><img src=member/jhkim_topic1.jpg align=right width=300> Object detection technology has been widely researched in various industries, including defense, due to its high accuracy and efficiency. In particular, various studies have been conducted on real-time object detection and tracking technologies. However, building a robust system for real-time object detection and controlling motors to track detected objects with weapons is challenging. This is because, when sensor data is processed in the cloud and motor actions are controlled by edge devices, communication latency between the cloud and edge devices make precise real-time motor control difficult. 
+I implemented a look ahead movement algorithm to enable fast and robust target tracking control system even in the communication delay circumstances. I developed a differential equation-based prediction model that use past sampled data to predict the object’s movement. This algorithm is used within a control loop and adjust the duty cycle to control the motor independently on the edge devices. When the position of detected object in the cloud are transmitted to the edge device, the edge device calculates the velocity and acceleration of the object based on the received position and past positions. Using this information, Look-Ahead Algorithm predicts the future position of the object to independently control the motor before the next detected object’s position is received from the cloud. This method allows the motor on the edge device to update the targeting point more frequently even in the presence of delays, reducing the overshooting of targeting point changes and making it robust system.</p>
 <h2>Publications</h2>
 <h3>Conference Publications (Intl. 1)</h3>
 <ul>
-<li><p>Jaehoon Kim and Daejin Park. <b>YOLOv8 Automatic Weapon Control with Edge-Cloud Integrated Look-Ahead Movement Estimator</b> In IEEE Cluster 2024.</p>
+<li><p>Jaehun Kim and Daejin Park. <b>YOLOv8 Automatic Weapon Control with Edge-Cloud Integrated Look-Ahead Movement Estimator</b> In IEEE ISOCC 2024.</p>
+</li>
+<li><p>Jaehun Kim and Daejin Park. <b>Fast Object Positioning using Jetson-Tricore Hybrid Integration with Look-Ahead Movement Estimator</b> In IEEE GCCE 2024.</p>
 </li>
 </ul>
 <h3>Participation in International Conference</h3>
 <ul>
-<li><p>IEEE Cluster, Kobe, Korea</p>
+<li><p>IEEE ISOCC 2024, Sapporo, Japan</p>
+</li>
+<li><p>IEEE GCCE 2024, Fukuoka, Japan</p>
 </li>
 </ul>
 <p>Last Updated, 2024.5.28</p>
