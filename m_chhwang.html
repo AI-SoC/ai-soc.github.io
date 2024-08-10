@@ -4,7 +4,7 @@
 <head><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Titillium Web">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="script/aisoc.css" type="text/css" />
-<title>Dongkyu Jung (M.S. 24, Samsung Electronics)</title>
+<title>Youngwon Jeon (Undergraduate Student)</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -61,7 +61,7 @@
 <div class="menu-item"><a href="m_ywjeon.html">(B.S.)&nbsp;Y.&nbsp;W.&nbsp;Jeon</a></div>
 <div class="menu-item"><a href="m_jhkim.html">(B.S.)&nbsp;J.&nbsp;H.&nbsp;Kim</a></div>
 <div class="menu-item"><a href="m_jhlee.html">(B.S.)&nbsp;J.&nbsp;H.&nbsp;Lee</a></div>
-<div class="menu-item"><a href="m_chhwang.html">(B.S.)&nbsp;C.&nbsp;H.&nbsp;Hwang</a></div>
+<div class="menu-item"><a href="m_chhwang.html" class="current">(B.S.)&nbsp;C.&nbsp;H.&nbsp;Hwang</a></div>
 <div class="menu-item"><a href="m_hskim.html">(B.S.)&nbsp;H.&nbsp;S.&nbsp;Kim</a></div>
 <div class="menu-category">Contact</div>
 <div class="menu-item"><a href="contact.html">KNU-Location</a></div>
@@ -69,69 +69,41 @@
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Dongkyu Jung (M.S.&nbsp;24, Samsung Electronics)</h1>
+<h1>Youngwon Jeon (Undergraduate Student)</h1>
 </div>
 <table class="imgtable"><tr><td>
-<img src="images/dkjung.jpg" alt="main" width="100px" />&nbsp;</td>
-<td align="left"><p>B.S. Candidate.<br /> 
-<a href="http://ai-soc.github.io">AI-Embedded System/Software on Chip (AI-SoC) Platform Lab</a><br />
-<a href="http://see.knu.ac.kr">School of Electronics Engineering</a><br />
-IT-1, no. 724, Kyungpook National University <br />
-Daehak-ro 80, Buk-gu, Daegu, Republic of Korea <br /> 
+<img src="images/ywjeon.jpg" alt="main" width="100px" />&nbsp;</td>
+<td align="left"><p>Undergraduate Student (B.S), Embedded System-on-Chip Integrator<br /> 
+<a href="http://ai-soc.github.io">AI-Embedded System/Software on Chip (AI-SoC) Lab</a><br />
+School of Electronics Engineering, Kyungpook National University <br />
 Phone: +82 053 940 8648 <br />
-E-mail: <i>wjdxyz</i> [@] gmail [DOT] com <br />
-[<a href="https://sites.google.com/view/dongkyu-jung">Homepage</a>] [<a href="https://scholar.google.com/citations?user=x1qhpnoAAAAJ&amp;hl=en">Google Scholar</a>] [<a href="svn/dkjeong.html">SVN</a>] [<a href="member/dkjeong_cv.pdf">CV</a>]</p>
+E-mail: <i>duddnjs5254</i> [@] naver[DOT] com <br /> 
+[<a href="https://sites.google.com/view/ywjeon">Homepage</a>] [<a href="https://scholar.google.com/citations?user=Nv3GINwAAAAJ&amp;hl=en">Google Scholar</a>] [<a href="svn/ywjeon.html">SVN</a>]</p>
 </td></tr></table>
 <h2>Repository Commit History </h2>
 <table class="imgtable"><tr><td>
-<img src="member/dkjung_svn.jpg" alt="main" width="700px" />&nbsp;</td>
+<img src="member/ywjeon_svn.jpg" alt="main" width="700px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <h2>Introduction</h2>
 <h3>Full Bio Sketch </h3>
-<p>Mr. Jung is currently a B.S. student in School of Electronics Engineering at Kyungpook National University, Daegu, Republic of Korea. His research interests include multiple sensor control and data processing to High-precision/high-speed/low-power environment recognition and space recognition in microprocessors with General-Purpose computing on Graphics Processing Units. Currently, he is focusing on effective LiDAR data processing acceleration with microprocessor on-chip GPU.</p>
+<p>Mr. Jeon is currently doing his undergraduate degree in Electronics Engineering at Kyungpook National University, Daegu, Republic of Korea. His research interests pathfinding algorithm derived from A* search algorithm. He designed Obstacle-Aware Adaptive A* Algorithm for search time reduction. He is pursuing his research to apply this algorithm to autonomous vehicle with multi-object situation. </p>
 <h2>Research Topic</h2>
-<p><img src=member/dkjung_topic1.jpg align=right width=300> Pre-processing of sensor data used by vehicles from edge processors reduces data communication and throughput from vehicle main processors, which positively affects overall power consumption. He studies how to track and remove low-varying data from distance data-based LiDAR sensors compared to previous times, and partially update to reduce total data processing/transmission and propose a method to detect semantic meaningful motions within the image through a two-dimension convolution scheme for the entire data of frames based on time-based variation data. It is expected that such processors can be carried out in real time through acceleration using DCU's on-chip gpu. </p>
-<p><img src=member/dkjung_topic2.jpg align=right width=300> For high-level autonomous vehicles, the self-driving processor determines the speed control and steering of the vehicle. Unlike conventional mechanical control, this creates an environment in which the individual control of each wheel is advantageous, rather than transferring power and steering by connecting multiple wheels into one axis with complete electronic control. He studies how to perform independent and immediate reactions using MCUs for individual vehicle wheel control using BLDC motors operated by direct current. Individual motor modules receive speed and steering control data from the central control system to control independent wheels in real time. Both control parameters are fatal to vehicle control and require rapid task control through the real-time system to the extent that they do not compromise the stability of the vehicle system. Real-time OS programming of low-power-small MCUs is expected to enable this control to be performed in real time.</p>
+<h3>Obstacle-Aware Adaptive A-Star Algorithm for Search Time Reduction (ASTAR) </h3>
+<p><img src=member/ywjeon_topic1.jpg align=right width=300> Obstacle-Aware Adaptive A* Algorithm is a search algorithm based on A*.
+Ordinary A* is an informed search algorithm using a weighted graph, allocating weight f(n) to every nodes(f(n) = g(n) + h(n), g(n) is cost from start to the node, h(n) is estimated cost from the node to goal, searching lowest cost nodes and continuing until search the goal node.
+Obstacle-Aware Adaptive A* reduces g(n) of nodes if the node be near walls, because actual shortest paths tend to be near walls, so that algorithm prefers nodes near walls. In random map, the algorithm tends to take little loss in effectiveness of path's cost, drastically save time if g(n) is properly reduced.</p>
 <h2>Publications</h2>
-<h3>Journal Publications (KCI 1, SCI 1)</h3>
+<h3>Conference Publications (Intl. 1)</h3>
 <ul>
-<li><p>Dongkyu Jung and Daejin Park. <b>Semantic Object Detection based on LiDAR Distance-based Clustering Techniques for Lightweight Embedded Processors (KCI)</b> Journal of the Korea Institute of Information and Communication Engineering, 2022.</p>
-</li>
-<li><p>Dongkyu Jung and Daejin Park. <b>Efficient Object Detection Using Semantic ROI Generation with Light-weighted LiDAR Clustering in Embedded Processors (SCI)</b> Sensors, 2023.</p>
-</li>
-<li><p>Dongkyu Jung and Daejin Park. <b>Optimizing Data Access for Accelerators Lightweight convolutional neural network algorithm structure (SCI) (Under Review)</b> IEEE Access, 2024.</p>
-</li>
-</ul>
-<h3>Conference Publications (Intl. 3)</h3>
-<ul>
-<li><p>Dongkyu Jung and Daejin Park. <b>Real Time Sensor Signal Processing Techniques Using Symmetric Dual-Bank Buffer on FreeRTOS</b> In IEEE LifeTech 2021, 2021. </p>
-</li>
-<li><p>Dongkyu Jung and Daejin Park. <b>Accelerated On-Chip Algorithm based on Semantic Region-based Partial Difference Detection for LiDAR-Vision Depth Data Transmission Reduction in Lightweight Controller Systems of Autonomous Vehicle</b> In 2021 IEEE 14th International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC), 2021.</p>
-</li>
-<li><p>Dongkyu Jung and Daejin Park. <b>RTOS-based Task-Driven Scheduling for Vehicle Independent BLDC Motor Control</b> In IEEE 49th Annual Conference of the IEEE Industrial Electronics Society (IECON 2023), 2023.</p>
-</li>
-</ul>
-<h3>Patents (Domestic 3)</h3>
-<ul>
-<li><p><b>LiDAR Data Transmission Method for Reducing LiDAR Data Transmission Amount, Apparatus and System for Performing the Same</b> In Korea Patent and Tradmark Office, June 2022. Korea Patent Pending</p>
-</li>
-<li><p><b>Object Detection Device and Method using Low-Resolution LiDAR Sensor</b> In Korea Patent and Tradmark Office, June 2022. Korea Patent Pending</p>
-</li>
-<li><p><b>System and Method for Recognizing Object based on LiDAR</b> In Korea Patent and Tradmark Office, June 2022. Korea Patent Pending</p>
+<li><p>Youngwon Jeon and Daejin Park. <b>Self-Organizing Movement Control for Large-Scaled Autonomous Vehicle Collision Congestion Mitigation</b> In IEEE Vehicular Networking Conference (VNC), 2024.</p>
 </li>
 </ul>
 <h3>Participation in International Conference</h3>
 <ul>
-<li><p>IEEE LifeTech 2021, Osaka, Japan </p>
-</li>
-<li><p>IEEE MCSoC 2021, Singapore</p>
-</li>
-<li><p>IEEE IROS 2022, Kyoto, Japan</p>
-</li>
-<li><p>IEEE IECON 2023, Singapore, Singapore</p>
+<li><p>IEEE VNC, Kobe, Korea</p>
 </li>
 </ul>
-<p>Last Updated, 2024.05.28</p>
+<p>Last Updated, 2024.5.28</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>
