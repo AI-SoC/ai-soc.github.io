@@ -4,7 +4,7 @@
 <head><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Titillium Web">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="script/aisoc.css" type="text/css" />
-<title>Youngwon Jeon (Undergraduate Student)</title>
+<title>Janghun Lee (Undergraduate Student)</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -69,16 +69,16 @@
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Youngwon Jeon (Undergraduate Student)</h1>
+<h1>Janghun Lee (Undergraduate Student)</h1>
 </div>
 <table class="imgtable"><tr><td>
-<img src="images/ywjeon.jpg" alt="main" width="100px" />&nbsp;</td>
+<img src="images/jhlee.jpg" alt="main" width="100px" />&nbsp;</td>
 <td align="left"><p>Undergraduate Student (B.S), Embedded System-on-Chip Integrator<br /> 
 <a href="http://ai-soc.github.io">AI-Embedded System/Software on Chip (AI-SoC) Lab</a><br />
 School of Electronics Engineering, Kyungpook National University <br />
 Phone: +82 053 940 8648 <br />
-E-mail: <i>duddnjs5254</i> [@] naver[DOT] com <br /> 
-[<a href="https://sites.google.com/view/ywjeon">Homepage</a>] [<a href="https://scholar.google.com/citations?user=Nv3GINwAAAAJ&amp;hl=en">Google Scholar</a>] [<a href="svn/ywjeon.html">SVN</a>]</p>
+E-mail: <i>1dlwkdgns</i> [@] naver[DOT] com <br /> 
+[<a href="https://sites.google.com/knu.ac.kr/janghunlee">Homepage</a>] [<a href="https://scholar.google.com/citations?hl=ko&amp;user=XUYt0hcAAAAJ">Google Scholar</a>] [<a href="svn/jhlee.html">SVN</a>]</p>
 </td></tr></table>
 <h2>Repository Commit History </h2>
 <table class="imgtable"><tr><td>
@@ -86,24 +86,28 @@ E-mail: <i>duddnjs5254</i> [@] naver[DOT] com <br />
 <td align="left"></td></tr></table>
 <h2>Introduction</h2>
 <h3>Full Bio Sketch </h3>
-<p>Mr. Jeon is currently doing his undergraduate degree in Electronics Engineering at Kyungpook National University, Daegu, Republic of Korea. His research interests pathfinding algorithm derived from A* search algorithm. He designed Obstacle-Aware Adaptive A* Algorithm for search time reduction. He is pursuing his research to apply this algorithm to autonomous vehicle with multi-object situation. </p>
+<p>Mr.Lee is currently doing his undergraduate degree in Electronics Engineering at Kyungpook National University, Daegu, Republic of Korea. His research interests include confidential and reliable Over-The-Air(OTA) update, both entire and partial, in OS environment and embedded system architecture using multimedia.</p>
 <h2>Research Topic</h2>
-<h3>Obstacle-Aware Adaptive A-Star Algorithm for Search Time Reduction (ASTAR) </h3>
-<p><img src=member/ywjeon_topic1.jpg align=right width=300> Obstacle-Aware Adaptive A* Algorithm is a search algorithm based on A*.
-Ordinary A* is an informed search algorithm using a weighted graph, allocating weight f(n) to every nodes(f(n) = g(n) + h(n), g(n) is cost from start to the node, h(n) is estimated cost from the node to goal, searching lowest cost nodes and continuing until search the goal node.
-Obstacle-Aware Adaptive A* reduces g(n) of nodes if the node be near walls, because actual shortest paths tend to be near walls, so that algorithm prefers nodes near walls. In random map, the algorithm tends to take little loss in effectiveness of path's cost, drastically save time if g(n) is properly reduced.</p>
+<h3>Fire Detection, Notification and Suppression System using YOLOv8 </h3>
+<p><img src=member/jhlee_topic1.jpg align=right width=300> The currently widely used fire suppression system is the sprinkler. When a fire occurs and the temperature sensor exceeds the threshold, the sprinkler operates. Depending on the environment, this method may take a long time for the sprinkler to operate from the fime the fire occurs. As an alternative to this problem, I propose a fire detection, notification, and suppression system using AI. Using AI, immediate detection, notification and suppression are possible.</p>
+<p>In this study, the following structure was designed. Each edge device continuously obtains one frame of image from the real-time video obtained through the camera. The YOLOv8 model trained to detect fire determines whether a fire has occurred in the captured image. If a fire has occurred, a rectangle is marked on the captured image at the location of the fire. After that, the device number and the corresponding image are transmitted to the central device, CM4 sensing, using RS485 communication. CM4 sensing transmits the received data to the server computer using socket communication, and the server transmits the received data to the mobile phone. The mobile phone generates a notification that a fire has occurred using a dedicated app. When you click the fire suppression button in the app, it will send a command to the edge device to suppress the fire by going back to the path where the fire occurrence data was transmitted. The edge device will spray water at the location of the fire shown in the image. In this study, spraying water is replaced by a laser pointer. This system uses RS485 wired communication, making it noise-resistant and ensuring integrity in communication. Additionally, This system can be expanded by installing additional edge devices.</p>
+<h3>Over-The-Air update using IrDA Communication in an OS environment</h3>
+<p><img src=member/jhlee_topic2.jpg align=right width=300> Recently, many devices use Over-The-Air(OTA) technology to update internal software using wireless communication. The advantage of performing OTA updates using the Internet is that many devices can be updated at the same time. However, OTA updates using the Internet have security vulnerabilities. There is a risk that unauthorized external users can eavesdrop on the contents of the OTA update software or arbitrarily update the software of the device. </p>
+<p>As an alternative to this problem, I propose OTA updates using IrDA (Infrared Data Association) communication. IrDA has fewer security vulnerabilities during data transmission due to the directivity and short-range nature of infrared. It also allows for the creation of highly secure and water proof devices since it does not require a physical connection port.</p>
+<p>In this study, OTA using IrDA is performed in an environment where an OS exists. AES is used for confidentiality, and CRC is used for integrity. The host divides the update file into packets of a certain size and transmits them to the target device. The target device checks the CRC and requests the host to retransmit the packet if there is a problem with the packet.</p>
+<p>For small programs, it is okay to change the entire program, but for large modularized programs, especially programs that use multiple dynamic libraries, it is possible to update the program by changing only the dynamic libraries that need to be modified. In addition, it is possible to change the dynamic libraries at runtime, so that the program can be updated without stopping.</p>
 <h2>Publications</h2>
-<h3>Conference Publications (Intl. 1)</h3>
+<h3>Conference Publications </h3>
 <ul>
-<li><p>Youngwon Jeon and Daejin Park. <b>Self-Organizing Movement Control for Large-Scaled Autonomous Vehicle Collision Congestion Mitigation</b> In IEEE Vehicular Networking Conference (VNC), 2024.</p>
+<li><p>Janghun Lee and Daejin Park. <b>Fast Embedded Software Management based on Dynamic Partial Update Techniques via IR for Intelligent AI-Driven Systems (On Writing)</b> In IEEE Symposium on Multimedia, Robotic Computing (SMRC), 2024.</p>
 </li>
 </ul>
 <h3>Participation in International Conference</h3>
 <ul>
-<li><p>IEEE VNC, Kobe, Korea</p>
+<li><p>IEEE SMRC, Tokyo, Korea</p>
 </li>
 </ul>
-<p>Last Updated, 2024.5.28</p>
+<p>Last Updated, 2024.8.13</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>
