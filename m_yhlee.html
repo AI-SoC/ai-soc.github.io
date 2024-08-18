@@ -40,7 +40,6 @@
 <div class="menu-item"><a href="u_must_books.html">Must-Read&nbsp;Books</a></div>
 <div class="menu-category">Member Profile (24)</div>
 <div class="menu-item"><a href="m_smlee.html">(Prof)&nbsp;S.&nbsp;M.&nbsp;Lee</a></div>
-<div class="menu-item"><a href="m_shlee.html">(Prof)&nbsp;S.&nbsp;H.&nbsp;Lee</a></div>
 <div class="menu-item"><a href="m_jskwon.html">(Ph.D)&nbsp;J.&nbsp;S.&nbsp;Kwon</a></div>
 <div class="menu-item"><a href="m_mjkang.html">(Ph.D)&nbsp;M.&nbsp;J.&nbsp;Kang</a></div>
 <div class="menu-item"><a href="m_shhong.html">(Ph.D)&nbsp;S.&nbsp;H.&nbsp;Hong</a></div>
@@ -63,6 +62,12 @@
 <div class="menu-item"><a href="m_jhlee.html">(B.S.)&nbsp;J.&nbsp;H.&nbsp;Lee</a></div>
 <div class="menu-item"><a href="m_chhwang.html">(B.S.)&nbsp;C.&nbsp;H.&nbsp;Hwang</a></div>
 <div class="menu-item"><a href="m_hskim.html">(B.S.)&nbsp;H.&nbsp;S.&nbsp;Kim</a></div>
+<div class="menu-item"><a href="m_yjson.html">(B.S.)&nbsp;Y.&nbsp;J.&nbsp;Son</a></div>
+<div class="menu-category">Collaborators</div>
+<div class="menu-item"><a href="m_shlee.html">(Prof)&nbsp;S.&nbsp;H.&nbsp;Lee</a></div>
+<div class="menu-item"><a href="m_dklee.html">(Dr.&nbsp;)&nbsp;D.&nbsp;K.&nbsp;Lee</a></div>
+<div class="menu-item"><a href="m_dkjung.html">(Mr.&nbsp;)&nbsp;D.&nbsp;K.&nbsp;Jumg</a></div>
+<div class="menu-item"><a href="m_jsjang.html">(Mr.&nbsp;)&nbsp;J.&nbsp;S.&nbsp;Chang</a></div>
 <div class="menu-category">Contact</div>
 <div class="menu-item"><a href="contact.html">KNU-Location</a></div>
 <div class="menu-category">Since 2014<br><a href=https://hits.seeyoufarm.com><img src=https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fai-soc.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false/></a></div>
@@ -90,9 +95,9 @@ E-mail: <i>redson0517</i> [@] gmail[DOT] com <br />
 <h2>Research Topic</h2>
 <p><img src=member/yhlee_topic1.jpg align=right width=300> Most verilog verification flows are iterative cylce of design-compile-simulation-debugging and updating. 1) Write the source code using verilog for the circuit. 2) Creating the test-benchs involves test cases and checker. 3) Run the simulation. 4) Debugging and updating the design including testbenches. Turn around time of the design cycle takes much time when the testbenches changed or added including test cases and checker. Tcl-based verification code for dynamically could replace a verilog stimuls while the simulation is running. Tcl verification code in the simulator When the test stimulus changed, the turnaround time increases significantly, because all designs including DUT need recompling. To solve the long iterative simulation time, the proposed verification flows use the Tcl based verification code generation for dynamically from previous simulation snapshot. Our proposed verification flow is shown in Fig. 2. 1) Write source code including DUT and testbenchs using verilog. Testbenchs are only including the common code such as clock source and DUT instanciation. 2) Verilog task and function for driving stimuls and checking the results is implemented by Tcl based verification code which is pluggable on the simulation run time. This pulggable code could be added or deleted in the simulation run time without recompiling source code. Simulator could skip the compile process, just like running executable batch files instead of new compiling each time while you run new simulation. 3) We are able to save the full state of the simulation snapshot during runtime to a file, restore it at a later time and continue running simulation from the same point. If several test cases are different only after the simulation warms up, you may run the simulation up to end of its warm-up period only once, save the sate and then reload it for every test cases. 4) During checking and updating period, reloading the snapshot has ability to roll-back to previous state 2) or 3).  </p>
 <h2>Publications</h2>
-<h3>Journal Publications (KCI 1)</h3>
+<h3>Journal Publications (<font color=blue>KCI</font> 1)</h3>
 <ul>
-<li><p>Yonghun Lee and Daejin Park. <b>Fast Verilog Simulation using Tcl-based Verification Code Generation for Dynamically Reloading from Pre-Simulation Snapshot (KCI)</b> Journal of the Korea Institute of Information and Communication Engineering, 27(4):545-551, 2023. </p>
+<li><p>Yonghun Lee and Daejin Park. <b>Fast Verilog Simulation using Tcl-based Verification Code Generation for Dynamically Reloading from Pre-Simulation Snapshot (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 27(4):545-551, 2023. </p>
 </li>
 </ul>
 <h3>Conference Publications (Intl. 5)</h3>
