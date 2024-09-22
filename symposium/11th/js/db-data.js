@@ -35,26 +35,25 @@ DB[06] = new Array("","","","","","","","","1B-4","Low-Power High Speed CNN Acce
 
   
 // Digital Twin
-DB[07] = new Array("1C","color-oral-06","1C","Sept. 6, 2024 (Friday)","16:00 ~ 16:30","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Digital Twin, Signal Processing","1C-1","3D Data Analysis and Reconstruction Using PCA and Ellipse Fitting for Height Level Sensor","<b>Seungmin Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","1D");
+DB[07] = new Array("1C","color-oral-06","1C","Sept. 6, 2024 (Friday)","16:00 ~ 16:30","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Digital Twin, Signal Processing","1C-1","3D Data Analysis and Reconstruction Using PCA and Ellipse Fitting for Height Level Sensor","<b>Seungmin Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/aipFhhhz6aE","1D");
 
-DB[08] = new Array("","","","","","","","","1C-2","Compressive Sensing Techniques for Efficient Importance Sampling","<b>Seongho Cho, Daejin Park</b> (LG Display, Kyungpook National University, Korea)<br>","","","");
+DB[08] = new Array("","","","","","","","","1C-2","Compressive Sensing Techniques for Efficient Importance Sampling","<b>Seongho Cho, Daejin Park</b> (LG Display, Kyungpook National University, Korea)<br>","","https://youtu.be/whIZWjhSZEs","");
 
 // AI-Enabled Algorithm
-DB[09] = new Array("1D","color-oral-04","1D","Sept. 6, 2024 (Friday)","16:30 ~ 17:15","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","AI Accelerated Embedded Software","1D-1","Adaptive Auto Parking Assistance System with PID Controller","<b>Hyunjung Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","1E");
+DB[09] = new Array("1D","color-oral-04","1D","Sept. 6, 2024 (Friday)","16:30 ~ 17:15","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","AI Accelerated Embedded Software","1D-1","Adaptive Auto Parking Assistance System with PID Controller","<b>Hyunjung Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/-vy2XaTFAkU","1E");
 
-DB[10] = new Array("","","","","","","","","1D-2","Automotive Flow Control for Large-Scaled Collaborative Congestion Mitigation","<b>Youngwon Jeon, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
-
-DB[11] = new Array("","","","","","","","","1D-3","Fast Object Tracking using Jetson-Tricore Hybrid Integration with Look Ahead Movement Estimator","<b>Jaehun Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/tRWa049spNY","");
+DB[10] = new Array("","","","","","","","","1D-3","Fast Object Tracking using Jetson-Tricore Hybrid Integration with Look Ahead Movement Estimator","<b>Jaehun Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/tRWa049spNY","");
 
 
 // Compiler Simulation
-DB[12] = new Array("1E","color-oral-05","1E","Sept. 6, 2024 (Friday)","17:15 ~ 17:45","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Hypervisor, Compiler","1E-1","Optimizing Multithreaded Access to Global Variables in SPM through Compiler-Enhanced Dependency Analysis","<b>Gihyun Jeon, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","1F");
+DB[11] = new Array("1E","color-oral-05","1E","Sept. 6, 2024 (Friday)","17:15 ~ 17:45","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Hypervisor, Compiler","1E-1","Optimizing Multithreaded Access to Global Variables in SPM through Compiler-Enhanced Dependency Analysis","<b>Gihyun Jeon, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/g3pgG_EF8M0","1F");
 
-DB[13] = new Array("","","","","","","","","1E-2","Hypervising Techniques in Jailhouse Hypervisor with Erika RTOS","<b>Minjung Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/xg0ciC38WJE","");
-DB[14] = new Array("","","","","","","","","1E-3","Intermittent, Fast, Partial Updatable OTA Update Techniques","<b>Janghun Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/OFsJlEoyAjY","");
+DB[12] = new Array("","","","","","","","","1E-2","Hypervising Techniques in Jailhouse Hypervisor with Erika RTOS","<b>Minjung Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/xg0ciC38WJE","");
+
+DB[13] = new Array("","","","","","","","","1E-3","Intermittent, Fast, Partial Updatable OTA Update Techniques","<b>Janghun Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","https://youtu.be/OFsJlEoyAjY","");
 
 
-DB[15] = new Array("","","","","","","","","1E-3","End of Symposium","","","","");
+DB[14] = new Array("","","","","","","","","1E-3","End of Symposium","","","","");
 
 
 
