@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> ELEC323 Microcomputer Architecture (Prof. Daejin Park)</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+
+  <!-- Google fonts -->
+  <link href="./css/css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+
+<div id="header">
+    <img src="./css/logo.gif" style="height:50px; float: left; margin-left: 20px;">
+    <h1>ELEC323 Microcomputer Architecture (Prof. Daejin Park)</h1>
+  <div style="clear:both;"></div>
+</div>
+
+
+
+<div class="sechighlight">
+<div class="container sec">
+  <h2>Time Schedule</h2>
+
+  Location: IT-1 2th floor seminar room
+  <br><br>
+  The schedule is subject to change according to the pace of the class.
+</div>
+</div>
+
+<div class="container sec">
+<table class="table">
+  <tbody><tr class="active">
+    <th>Day</th><th>Type</th><th>Requirement</th><th>No</th><th>Contents</th><th>Notes</th><th>Remarks</th>
+  </tr>
+  <tr>
+    <td>3/6</td>
+    <td>Lecture Introduction</td>
+    <td></td>
+    <td></td>
+    <td><b>Intro</b><br>Lecture Objectives</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr>
+    <td>3/8</td>
+    <td>Theory</td>
+    <td></td>
+    <td>1</td>
+    <td><b>Microprogrammed Concept</b><br>Hardware-Software Cooperation</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr class=warning>
+    <td>3/13</td>
+    <td>Lab</td>
+    <td></td>
+    <td>2</td>
+    <td><b>C/C++ Review</b><br>class design, input output, control loop, function</td>
+    <td>
+       
+    </td>
+    <td></td>
+    </tr>
+  <tr class=warning>
+    <td>3/15</td>
+    <td>Theory+Lab</td>
+    <td></td>
+    <td>3</td>
+    <td><b>TPU Processors and Software</b><br>Binary Code Generation and TPU Loading</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr>
+    <td>3/20</td>
+    <td>Theory</td>
+    <td></td>
+    <td>4</td>
+    <td><b>TPU Decode Unit Design - MOV0 Instruction </b><br>Decode Unit Design</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr class=warning>
+    <td>3/22</td>
+    <td>Lab</td>
+    <td></td>
+    <td>5</td>
+    <td><b>TPU Decode Unit Design Lab </b><br>Decode Unit Design</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr>
+    <td>3/27</td>
+    <td>Theory</td>
+    <td></td>
+    <td>6</td>
+    <td><b>TPU Processors Execution Unit, Register File 구조</b><br>Execution Unit, Registger, Decode Unit </td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr class=warning>
+    <td>3/29</td>
+    <td>Lab</td>
+    <td></td>
+    <td>7</td>
+    <td><b>TPU Processors Execution Unit, Register File Design Lab</b><br>Execution Unit, Registger, Decode Unit Integration</td>
+    <td>
+        
+    </td>
+    <td></td>
+    </tr>
+  <tr>
+    <td>4/3</td>
+    <td>Theory</td>
+    <td></td>
+    <td>8</td>
+    <td><b>TPU Processor Instruction - ADD, SUB</b><br>ADD, SUB Instruction Decoding, Execution, Register Access</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr class=warning>
+    <td>4/5</td>
+    <td>Lab</td>
+    <td></td>
+    <td>9</td>
+    <td><b>TPU Processor Instruction - ADD, SUB Design Lab</b><br>ADD, SUB Instruction Decoding, Execution, Register Access</td>
+    <td>
+        
+    </td>
+    <td></td>
+    </tr>
+  <tr class=warning>
+    <td>4/10</td>
+    <td>Lab</td>
+    <td></td>
+    <td>10</td>
+    <td><b>TPU Processor Memory Access - MOV0, MOV1 Instruction</b><br>MOV0, MOV1 Instruction Decoding, Execution, Memory Access</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr class=danger>
+    <td>4/12</td>
+    <td>Lab</td>
+    <td></td>
+    <td>11</td>
+    <td><b>Signed, Unsigned , MUL, Matrix </b><br>Various Computation Issues</td>
+    <td>
+        [Notes]
+    </td>
+    <td>[HW1]</td>
+    </tr>
+  <tr class=warning>
+    <td>5/1</td>
+    <td>Theory+Lab</td>
+    <td></td>
+    <td>12</td>
+    <td><b>Conditional Branch Concept - Control Flow</b><br>JZ Instruction, Program Counter Concept</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr class=warning>
+    <td>5/3</td>
+    <td>Theory+Lab</td>
+    <td></td>
+    <td>13</td>
+    <td><b>Register-to-Register Move Instruction</b><br>Improving Instruction Execution</td>
+    <td>
+        [Notes]
+    </td>
+    <td>Quiz 1</td>
+    </tr>
+  <tr class=warning>
+    <td>5/8</td>
+    <td>Lab</td>
+    <td></td>
+    <td>14</td>
+    <td><b>TPU Excution Time and Power Consumption</b><br>Instruction Execution Profile Tracking and Power Consumption Measurement</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr class=warning>
+    <td>5/10</td>
+    <td>Lab</td>
+    <td></td>
+    <td>15</td>
+    <td><b>Accelerator Co-Processor Design</b><br>Matrix Product Accelerator Design</td>
+    <td>
+        [Notes]
+    </td>
+    <td>HW 2</td>
+    </tr>
+  <tr >
+    <td>5/15</td>
+    <td>Theory</td>
+    <td></td>
+    <td>16</td>
+    <td><b>Microprocessor Performance Quantitative Approach</b><br>Processor Performance Quantitative Analysis</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr >
+    <td>5/17</td>
+    <td>Theory</td>
+    <td></td>
+    <td>17</td>
+    <td><b>Processor Performance Acceleration</b><br>Instruction Reordering-based Parallelism, Scheduling, Pipelining </td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr >
+    <td>5/22</td>
+    <td>Test</td>
+    <td></td>
+    <td></td>
+    <td><b>Quiz and Lab</b><br>Processor Design Lab Teset </td>
+    <td>
+        [Notes]
+    </td>
+    <td>Quiz 2</td>
+    </tr>
+  <tr >
+    <td>5/24</td>
+    <td>Theory</td>
+    <td></td>
+    <td>18</td>
+    <td><b>Microcontroller </b><br>MCU Programming Basics</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr class=warning>
+    <td>5/29</td>
+    <td>Lab</td>
+    <td></td>
+    <td>19</td>
+    <td><b>Microcontroller Programming </b><br>MCU Programming Experiments</td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr class=warning>
+    <td>5/31</td>
+    <td>세미나</td>
+    <td></td>
+    <td>20</td>
+    <td><b>Micro-Processor Architecture Trend</b><br>AI, IoT. Big Data Processing HPC Processor </td>
+    <td>
+        [Notes]
+    </td>
+    <td></td>
+    </tr>
+  <tr >
+    <td>6/5</td>
+    <td>Final Test</td>
+    <td></td>
+    <td></td>
+    <td><b>Final Project</b><br>Presentation</td>
+    <td>
+        [Notes]
+    </td>
+    <td>Final Term</td>
+    </tr>
+
+
+  <tr class="danger">
+    <td></td>
+    <td>Talk</td>
+    <td></td>
+    <td></td>
+    <td><b>Wrap-up</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+</tbody></table>
+</div>
+
+
+<!-- jQuery and Boostrap -->
+<script src="./css/jquery.min.js"></script>
+<script src="./css/bootstrap.min.js"></script>
+
+
+
+</body></html>
