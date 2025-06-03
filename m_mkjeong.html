@@ -4,7 +4,7 @@
 <head><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Titillium Web">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="script/aisoc.css" type="text/css" />
-<title>Digital Signal Processing (ELEC811)</title>
+<title>Mingyu Jeong (Undergraduate Student)</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -36,7 +36,7 @@
 <div class="menu-item"><a href="l_study.html">Study</a></div>
 <div class="menu-item"><a href="c_lpsoc.html">Low&nbsp;Power&nbsp;SoC</a></div>
 <div class="menu-item"><a href="c_cprog.html">C&nbsp;Programming</a></div>
-<div class="menu-item"><a href="c_dsp.html" class="current">DSP</a></div>
+<div class="menu-item"><a href="c_dsp.html">DSP</a></div>
 <div class="menu-category">Useful Data</div>
 <div class="menu-item"><a href="u_software.html">Software</a></div>
 <div class="menu-item"><a href="u_must_books.html">Must-Read&nbsp;Books</a></div>
@@ -63,7 +63,7 @@
 <div class="menu-item"><a href="m_hskim.html">(B.S.)&nbsp;H.&nbsp;S.&nbsp;Kim</a></div>
 <div class="menu-item"><a href="m_jylee.html">(B.S.)&nbsp;J.&nbsp;Y.&nbsp;Lee</a></div>
 <div class="menu-item"><a href="m_yjlee.html">(B.S.)&nbsp;Y.&nbsp;J.&nbsp;Lee</a></div>
-<div class="menu-item"><a href="m_mkjeong.html">(B.S.)&nbsp;M.&nbsp;K.&nbsp;Jeong</a></div>
+<div class="menu-item"><a href="m_mkjeong.html" class="current">(B.S.)&nbsp;M.&nbsp;K.&nbsp;Jeong</a></div>
 <div class="menu-category">Collaborators</div>
 <div class="menu-item"><a href="m_shlee.html">(Prof)&nbsp;S.&nbsp;H.&nbsp;Lee</a></div>
 <div class="menu-item"><a href="m_dklee.html">(Dr.&nbsp;)&nbsp;D.&nbsp;K.&nbsp;Lee</a></div>
@@ -73,49 +73,42 @@
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Digital Signal Processing (ELEC811)</h1>
+<h1>Mingyu Jeong (Undergraduate Student)</h1>
 </div>
-<h2>Lecture Overview</h2>
 <table class="imgtable"><tr><td>
-<img src="images/dsp.jpg" alt="main" width="200px" />&nbsp;</td>
-<td align="left"><p>Digital Signal Processing begins with a discussion of the analysis and representation of discrete-time signal systems, including discrete-time convolution, difference equations, the z-transform, and the discrete-time Fourier transform. Emphasis is placed on the similarities and distinctions between discrete-time. The course proceeds to cover digital network and non-recursive (finite impulse response) digital filters. Digital Signal Processing concludes with digital filter design and a discussion of the fast Fourier transform algorithm for computation of the discrete Fourier transform. </p>
+<img src="images/mkjeong.jpg" alt="main" width="100px" />&nbsp;</td>
+<td align="left"><p>Undergraduate Student (B.S), Embedded System-on-Chip Integrator<br /> 
+<a href="http://ai-soc.github.io">AI-Embedded System/Software on Chip (AI-SoC) Lab</a><br />
+School of Electronics Engineering, Kyungpook National University <br />
+Phone: +82 053 940 8648 <br />
+E-mail: <i>dwrgt11</i> [@] naver[DOT] com <br /> 
+[<a href="https://sites.google.com/knu.ac.kr/janghunlee">Homepage</a>] [<a href="https://scholar.google.com/citations?user=Ld2v6WoAAAAJ&amp;hl=ko">Google Scholar</a>] [<a href="svn/jhlee.html">SVN</a>]</p>
 </td></tr></table>
-<p><img src=images/cprog_member.jpg align=right width=300> Prof. Daejin Park introduces basic fundamentals for the given lectures during 1 hour, then practice items by examples will be given. Mr. Dongkyu Lee will explain the experiment in details. Mr. Kwon and Mr. Kang are ready to assist the students during lab time. Students can ask any questions to these lecture assistants (TAs) directly or through lms web site.</p>
-<h3>Assignments</h3>
-<p>This lecture is experiment class. We cover only small parts of boring theory. Everything you have to do is to write your codes by yourself. All students have to do the programming problems themselves within 3 hours. The every on-the-live test will be given during the lecture. </p>
-<h3>Grading Criteria</h3>
-<p>Mid test 25%, final test 35% are evaluated by on-site programming and demonstration method. The lab during the every lecture is evaluated everyone, for 20% credit. The report is also given for 20% record.
-5%record will be evaluated regarding to the safety preliminary class.</p>
-<h2>Lecture Timeline</h2>
-<p>The following is a brief time schedule during one semester. Please contact us to get the detailed lecture information including lecture slides. The registered students can get the lecture slides from KNU lecture management systems (lms).</p>
+<h2>Repository Commit History </h2>
+<table class="imgtable"><tr><td>
+<img src="member/jhlee_svn.jpg" alt="main" width="700px" />&nbsp;</td>
+<td align="left"></td></tr></table>
+<h2>Introduction</h2>
+<h3>Full Bio Sketch </h3>
+<p>Mr. Jeong is currently doing his undergraduate degree in Electronics Engineering at Kyungpook National University, Daegu, Republic of Korea. His research focuses on adaptive embedded control systems under real-time constraints, particularly for robust and efficient operation in embedded environments. </p>
+<h2>Research Topic</h2>
+<h3>Recursive Kp Adjustment for Adaptive PID Control Error Compensation Under Timing Constraints </h3>
+<p><img src=member/mkjeong_topic1.jpg align=right width=400> Conventional PID controllers with fixed gain values often fail to provide reliable performance in the presence of unexpected high-frequency noise or external disturbances. These fixed-coefficient systems can struggle to maintain stability and may take a long time to return to the desired state, particularly in real-time embedded environments where timing constraints are strict. </p>
+<p>In this study, an adaptive PID control system is presented that dynamically adjusts the proportional gain (Kp) in response to real-time output conditions. When high-frequency noise is detected, the system reduces Kp to narrow the bandwidth of the closed-loop transfer function, minimizing sensitivity to rapid fluctuations. Conversely, when an external disturbance causes the output to deviate from the target, Kp is increased to enhance damping and speed up recovery.</p>
+<p>To ensure that all essential computations such as control, noise detection, and disturbance compensation are completed within the limited time of each control cycle, this study adopts the Goertzel algorithm instead of the conventional FFT for frequency analysis. While FFT requires collecting a large number of samples before performing a full computation, the Goertzel algorithm uses a recursive structure that allows calculations to be updated incrementally as each sample is received. This approach significantly reduces computation time and enables efficient real-time processing. As a result, the system is able to maintain both stability and responsiveness, making it suitable for robust control in embedded applications.</p>
+<h2>Publications</h2>
+<h3>Journal Publications </h3>
+<h3>Conference Publications (Intl. 1)</h3>
 <ul>
-<li><p>Introduction to Lecture</p>
-</li>
-<li><p>Signal Representation - Transition to Digital from Analog World</p>
-</li>
-<li><p>Discrete Sequences - Digital Signal Representation</p>
-</li>
-<li><p>Periodic Sampling - Discrete Time Sampling and Digitized Quantization</p>
-</li>
-<li><p>Discrete Fourier Transform (DFT) for Digital Signal Analysis</p>
-</li>
-<li><p>FIR and IIR Filter Design - Digital Signal Processing</p>
-</li>
-<li><p>Laplace Transform and Z-Transform</p>
-</li>
-<li><p>Stability Analysis</p>
-</li>
-<li><p>IIR Filter Responses Analysis using Z-Transform</p>
-</li>
-<li><p>Project - DFT, FFT Implementation using C Programming</p>
-</li>
-<li><p>Project - FIR and IIR Filter Implementation on Embedded MCU using C Programming</p>
-</li>
-<li><p>Project - FIR and IIR Filter Implementation on FPGA using Verilog HDL</p>
-</li>
-<li><p>Project - High Resolution Digital Class-D Amplifier Implementation using PWM</p>
+<li><p>Mingyu Jeong and Daejin Park. Recursive Kp Adjustment for Adaptive PID Control Error Compensation Under Timing Constraints In IEEE Global Conference on Consumer Electronics (GCCE) 2025.</p>
 </li>
 </ul>
+<h3>Participation in International Conference (Intl. )</h3>
+<ul>
+<li><p>IEEE GCCE 2025, Osaka, Japan </p>
+</li>
+</ul>
+<p>Last Updated, 2025.06.02</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>
