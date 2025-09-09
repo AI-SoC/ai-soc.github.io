@@ -91,14 +91,21 @@ E-mail: <i>redson0517</i> [@] gmail[DOT] com <br />
 <h3>Full Bio Sketch </h3>
 <p>Mr. Lee received the B.S degree in Electronics Engineering at Jeonbuk National University, Jeonju, Korea in 2004. Mr. Lee was a research engineer at Samsung Electronics over 16 years from 2004 to 2020. And have worked on high speed intra-panel interface and touch sensor controller. He is currently an Ph.D. student in School of Electronics Engineering at Kyungpook National University, Daegu, Republic of Korea. His research interests include one-dimensional hardware acceleration for embedded systems.</p>
 <h2>Research Topic</h2>
+<h3>Fast Co-Simulation</h3>
 <p><img src=member/yhlee_topic1.jpg align=right width=300> Most verilog verification flows are iterative cylce of design-compile-simulation-debugging and updating. 1) Write the source code using verilog for the circuit. 2) Creating the test-benchs involves test cases and checker. 3) Run the simulation. 4) Debugging and updating the design including testbenches. Turn around time of the design cycle takes much time when the testbenches changed or added including test cases and checker. Tcl-based verification code for dynamically could replace a verilog stimuls while the simulation is running. Tcl verification code in the simulator When the test stimulus changed, the turnaround time increases significantly, because all designs including DUT need recompling. To solve the long iterative simulation time, the proposed verification flows use the Tcl based verification code generation for dynamically from previous simulation snapshot. Our proposed verification flow is shown in Fig. 2. 1) Write source code including DUT and testbenchs using verilog. Testbenchs are only including the common code such as clock source and DUT instanciation. 2) Verilog task and function for driving stimuls and checking the results is implemented by Tcl based verification code which is pluggable on the simulation run time. This pulggable code could be added or deleted in the simulation run time without recompiling source code. Simulator could skip the compile process, just like running executable batch files instead of new compiling each time while you run new simulation. 3) We are able to save the full state of the simulation snapshot during runtime to a file, restore it at a later time and continue running simulation from the same point. If several test cases are different only after the simulation warms up, you may run the simulation up to end of its warm-up period only once, save the sate and then reload it for every test cases. 4) During checking and updating period, reloading the snapshot has ability to roll-back to previous state 2) or 3).  </p>
+<h3>TRU-net based NPU Design for Real-time Denoising </h3>
+<p><img src=member/yhlee_topic2.jpg align=right width=400> The demand for edge AI models capable of removing ambient noise and reconstructing clean speech has significantly increased in recent years. Such models have broad applications, including automatic speech recognition (ASR), hearing aids, and emergency situation detection. To be efficiently integrated into edge AI devices, a careful balance among performance, memory, and runtime power consumption must be achieved. Developing with pure C offers the advantage of fine-grained control over system resources, such as memory access, buffer sizing, operation selection, and parallel processing structures. This makes it particularly suitable for embedded systems and edge AI environments with strict resource constraints.</p>
+<p>In this work, we implemented a real-time noise reduction AI model based on the Tiny Recurrent U-Net (TRU-Net) using pure C. TRU-Net, a modified variant of U-Net, is well-suited for real-time speech enhancement. Its architecture enables efficient decoupling of computations along the frequency and time axes, supporting frame-by-frame processing in real time. Implementing the model in pure C provides several optimization opportunities for edge environments. In particular, it allows fine-level control over memory and computation, which is critical for optimization on embedded platforms such as DSPs or microcontrollers. Moreover, convolution operations, which constitute a major portion of the computational cost in deep learning models, were a primary target for optimization.</p>
+<p>Through loop unrolling, memory layout optimization, and operation reordering within loops, we reduced memory access latency and maximized CPU utilization. These strategies demonstrate that the proposed model can achieve reliable, high-performance, and low-latency speech enhancement in real-world embedded systems and edge AI devices. Furthermore, based on the insights gained from the C modeling and FPGA implementation, we extended our design considerations toward an NPU architecture optimized for ASIC environments. In particular, we explored power, performance, and area (PPA) trade-offs to derive an optimal structure tailored for edge AI accelerators. This holistic approach ensures that the proposed architecture not only meets the stringent runtime requirements of embedded platforms but also provides a scalable foundation for future ASIC-based NPU deployments.</p>
 <h2>Publications</h2>
-<h3>Journal Publications (<font color=blue>KCI</font> 1)</h3>
+<h3>Journal Publications (<font color=blue>KCI</font> 2)</h3>
 <ul>
 <li><p>Yonghun Lee and Daejin Park. <b>Fast Verilog Simulation using Tcl-based Verification Code Generation for Dynamically Reloading from Pre-Simulation Snapshot (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 27(4):545-551, 2023. </p>
 </li>
+<li><p>Yonghun Lee and Daejin Park. <b>TRU-Net based Real-Time Noise Suppression Model for Speech Enhancement Implemented entirely in C (<font color=blue>KCI</font>) (Under review)</b> Journal of the Korea Institute of Information and Communication Engineering, 2025.</p>
+</li>
 </ul>
-<h3>Conference Publications (Intl. 5)</h3>
+<h3>Conference Publications (Intl. 6)</h3>
 <ul>
 <li><p>Yoon-Kyung Choi, Hyung Rae Kim, Wongab Jung, MinSoo Cho, Zhong-Yuan Wu, HyoSun Kim, and YongHun Lee. <b>A 16.7M Color VGA Display Driver IC with Partial Graphic RAM and 500Mb/s/ch Serial Interface for Mobile a-Si TFT-LCDs</b> in ISCC 2007. </p>
 </li>
@@ -110,7 +117,7 @@ E-mail: <i>redson0517</i> [@] gmail[DOT] com <br />
 </li>
 <li><p>Yonghun Lee and Daejin Park. <b>Fast Verilog Simulation using Tcl-based Verification Code Generation for Dynamically Reloading from Pre-Simulation Snapshot</b> In IEEE ICAIIC 2023, 2023.</p>
 </li>
-<li><p>Yonghun Lee and Daejin Park. <b>In-System Test Unit Verilog RTL Generation using Capture-Replay Scheme in Dynamic Simulation (Under Review)</b> In IEEE APCCAS 2024, 2024.</p>
+<li><p>Yonghun Lee and Daejin Park. <b>TRU-Net Based AI Model Implementation by Pure C for Real-time Speech Enhancement</b> In IEEE International Conference on Artificial Intelligence in Information and Communication (ICAIIC 2026) (Under Review), 2026.</p>
 </li>
 </ul>
 <h3>Participation in International Conference</h3>
@@ -119,8 +126,12 @@ E-mail: <i>redson0517</i> [@] gmail[DOT] com <br />
 </li>
 <li><p>IEEE ICAIIC 2023, Bali, Indonnesia</p>
 </li>
+<li><p>IEEE DSC 2025, Taipei, Taiwan</p>
+</li>
+<li><p>IEEE ICAIIC 2025, Tokyo, Japan</p>
+</li>
 </ul>
-<p>Last Updated, 2024.05.28</p>
+<p>Last Updated, 2025.09.09</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>

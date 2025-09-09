@@ -93,22 +93,27 @@ E-mail: <i>rpoets</i> [@] gmail [DOT] com <br />
 <h3>Full Bio Sketch </h3>
 <p>Mr. Cho is now with LG Display as senior researcher, developing display and touch device controller including F/W for automotive. He is pursuing toward his M.S degree in school of Electronics Engineering at Kyungpook  National university, Daegu, Korea. He has worked on circuit design and performance verification for capacitive type in-cell touch from 2012 to 2018. His research interests include the robust circuit design and highly reliable and low power self diagnostic architecture for automotive display device for ASIL. </p>
 <h2>Research Topic</h2>
+<h3>Intra-Body Communication</h3>
 <p><img src=member/shcho_topic1.jpg align=right width=300> The Intra-Body Communication (IBC) benefits from a wireless communication system for exchanging various kinds of digital information through wearable electronic devices and sensors. The IBC using the human body as the transmission channel allows wireless communication without the transmitting radio frequency waves to the air. This paper discusses the results of experiments on secure personal authentication using electrostatic coupling IBC based on frequency shift keying (FSK) and binary data encryption technique. In order to enhance security we applied binay data encryption method, which is data rndom inversion and de-inversion technique based on a cycle redundancy check (CRC) for secure hash algorithm (SHA)-based binay data with 1 bit error correction code (ECC). We implemented and verified these features using the MCU boards and aluminum tape electrodes. The transmitter modulates encrypted binary data using 50% duty square wave as carrier signal and transmits data through the human body. The receiver demodulates received signal from the human body using analog to digital Converison (ADC) and decrypts the demodulated binary data. In order to figure out the frequency of carrier signal from ADC results, we applied zero-crossing algorithm which is used to detect the edge characteristic in computer vision. Experiment results shows that encrypted binary data modulated as square wave can be successfully transmitted through human body by applying the proposed architecture of a 1ch GPIO as a transmitter and 1ch ADC for as a receiver. In addition, we propose 1 bit error correction method for reliable IBC system. This technique performs error correction by utilizing the feature that carrier signal has 50% duty ratio. When 1 bit error correction technique is applied, the byte error rate at receiver side is improved around 3.5% compared to that not applied. </p>
+<h3>Compressive Sensing</h3>
+<p><img src=member/shcho_topic2.jpg align=right width=300> Compressed sensing (CS) enables accurate signal reconstruction from sub-Nyquist measurements when the signal is sparse or compressible in a certain transform domain, offering an attractive solution for resource constrained biomedical devices. The CS acquisition stage employs a pseudo-random number generator to realize time-domain random under sampling of ECG signals obtained through an AD8232 analog front end and digitized by a 10-bit ADC. For reconstruction, the Fast Iterative Shrinkage-Thresholding Algorithm (FISTA) was optimized using CMSIS-DSP FFT routines, efficient memory placement in Core Coupled Memory RAM(CCMRAM). Experimental results demonstrate that the proposed system achieves a Percentage Root-mean-square Difference Normalized (PRDN) of 24.38% while using only 33% of the Nyquist-rate samples, comparable to MATLAB-based L1 minimization via CVX. Normalization of input data further improved convergence stability and execution time, enabling real-time performance under strict computational and memory constraints. Moreover, analysis of mutual coherence between the sensing matrix and the DFT basis confirms that random under sampling achieves sufficient incoherence for accurate recovery without a dedicated random demodulator. These findings validate the feasibility of end-to-end CS implementation on resource-constrained embedded platforms, making the approach highly suitable for wearable and portable biomedical monitoring systems.</p>
 <h2>Publications</h2>
-<h3>Journal Publications (<font color=blue>KCI</font> 1, <font color=red>SCI</font> 1)</h3>
+<h3>Journal Publications (<font color=blue>KCI</font> 2, <font color=red>SCI</font> 1)</h3>
 <ul>
 <li><p>Seongho Cho and Daejin Park. <b>Electrostatic Coupling Intra-Body Communication Based on FSK Communication and Error Correction (<font color=blue>KCI</font>)</b> IEMEK Journal of Embedded Systems and Applications, 15(4):159-166, 2020. </p>
 </li>
 <li><p>Seongho Cho, Sejong Oh, and Daejin Park. <b>Robust Intra-Body Communication using SHA-ECC-CRC Inversion-based Frequency Shft Keying for Securing Electronic Authentication (<font color=red>SCI</font>)</b> Sensors, 20(21):6056-6073, 2020. </p>
 </li>
+<li><p>Seongho Cho and Daejin Park. <b>FISTA-Based Sparse Signal Recovery in Compressive Sensing: A Lightweight C Implementation (<font color=blue>KCI</font>)</b> IEMEK Journal of Embedded Systems and Applications, 2025.</p>
+</li>
 </ul>
-<h3>Conference Publications (Intl. 2)</h3>
+<h3>Conference Publications (Intl. 3)</h3>
 <ul>
 <li><p>Seongho Cho and Daejin Park. <b>Electrostatic Coupling Intra-Body Communication Based on Frequency Shift Keying and Error Correction for Asynchronous Clock-less IoT Applications</b> In The International Conference on Big data, IoT, and Cloud Computing (BIC-20), 2020.</p>
 </li>
-<li><p>Seongho Cho and Daejin Park. <b>FSK Communication and Error Correction Technique for Robust Electrostatic Coupling Intra-Body Communication</b> In IEEE Global Conference on Consumer Electronics 2020. </p>
+<li><p>Seongho Cho and Daejin Park. <b>FSK Communication and Error Correction Technique for Robust Electrostatic Coupling Intra-Body Communication</b> In IEEE Global Conference on Consumer Electronics (GCCE) 2020. </p>
 </li>
-<li><p>Seongho Cho and Daejin Park. <b>Automatic Importance Sampling Points Extraction for Anti-Aiasing Event Signal Processing (Under Review)</b> In IEEE ICTC 2024, 2024.</p>
+<li><p>Seongho Cho and Daejin Park. <b>Resource-Efficient Multi-Tone Capacitive Touch Detection Using Compressive Sensing and FISTA Reconstruction (Under Review)</b> In IEEE International Conference on Consumer Electronics Asia (ICCE-Asia 2025), 2025.</p>
 </li>
 </ul>
 <h3>Patents (Intl. 2)</h3>
@@ -126,8 +131,10 @@ E-mail: <i>rpoets</i> [@] gmail [DOT] com <br />
 </li>
 <li><p>IEEE IROS 2022, Kyoto, Japan</p>
 </li>
+<li><p>IEEE ICCE-Asia 2025, Busan, Korea</p>
+</li>
 </ul>
-<p>Last Updated, 2024.05.28</p>
+<p>Last Updated, 2025.09.09</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>

@@ -96,16 +96,20 @@ E-mail: <i>zxc34322</i> [@] naver[DOT] com <br />
 <h3>Scratch Pad Memory (SPM) Controller</h3>
 <p><img src=member/ghjeon_topic2.jpg align=right width=500> To overcome the large area and energy consumption of cache memory, the scratchpad is considered in the LMStr (Local Memory Store) structure. Various measures are prepared to overcome the fragmentation issue that arises in this context, and a performance comparison is conducted. The performance is evaluated based on the SST (Structural Simulation Toolkit). Cache memory, being controlled by hardware, incurs significant hardware burden and power consumption. This led to the emergence of scratchpad memory. However, scratchpad memory, being software-controlled, increases the burden on programmers and compilers. Therefore, the use of scratchpad memory based on local memory store (LMStr) has been proposed to reduce the burden on programmers and compilers due to conventional scratchpad memory. However, this structure cannot be free from the fragmentation problem due to storing variable block sizes in the data storage space. As a method to use the same memory space more efficiently, I propose an LMStr structure that applies paging. This structure stores data blocks of a fixed size, not variable size, thus it is free from external fragmentation and has a higher hit ratio due to data locality. And the proposed structure is tested in the gem5 simulation environment. To simulate this structure in gem5, a new structure that does not affect the results of the simulation enables this and allows obtaining the desired outcomes.</p>
 <h3>Compiler-Assisted Multithreaded SPM Management</h3>
-<p><img src=member/ghjeon_topic3.jpg align=right width=200> Unlike cache memory, scratchpad memory is controlled by the user and software. Although it is true that it can be difficult for users to handle, it also comes with advantages. Unlike cache memory, it allows for addressable access, giving users flexibility in accessing it. In specific situations such as with automotive MCUs, IO processing increases significantly. Since IO processing consumes a lot of time, issues related to shared memory access in multithreading must be handled carefully.
+<p><img src=member/ghjeon_topic3.jpg align=right width=250> Unlike cache memory, scratchpad memory is controlled by the user and software. Although it is true that it can be difficult for users to handle, it also comes with advantages. Unlike cache memory, it allows for addressable access, giving users flexibility in accessing it. In specific situations such as with automotive MCUs, IO processing increases significantly. Since IO processing consumes a lot of time, issues related to shared memory access in multithreading must be handled carefully.
 Therefore, in special situations with frequent IO communication, scratchpad memory is treated as shared memory, and access issues are addressed accordingly.</p>
+<h3>Efficient Hybrid Memory Allocation Optimization Using LLVM</h3>
+<p><img src=member/ghjeon_topic4.jpg align=right width=600> We proposes a hybrid memory allocation method that combines the advantages of cache memory and software-managed TCM (Tightly Coupled Memory) to enhance performance in embedded systems. To overcome existing limitations like the need for hardware modifications or restricted applicability in common development environments, the authors introduce a dynamic profiling technique based on an LLVM compiler pass. This method measures variable access counts and locality to determine which data is better suited for either cache or TCM, and then applies a tiered allocation strategy based on this information. Experimental results show that this approach provides more stable and effective performance improvements compared to conventional methods.</p>
+<h2>Edge AI Acceleration</h2>
+<p>My research focuses on accelerating edge AI and reducing energy consumption by optimizing models for MCUs. This involves using TVM to optimize and generate models, followed by further optimization using an LLVM Pass on the backend.</p>
 <h2>Publications</h2>
 <h3>Journal Publication (<font color=red>SCI</font> 2, <font color=blue>KCI</font> 2)</h3>
 <ul>
 <li><p>Gihyeon Jeon and Daejin Park. <b>Defragmentation-based Efficient Allocation on On-Chip Scratch-Pad Memory for Lightweighted Microcontrollers (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 2024.</p>
 </li>
-<li><p>Gihyeon Jeon and Daejin Park. <b>On Preparation (<font color=red>SCI</font>)</b> IEEE Access, 2024.</p>
+<li><p>Gihyeon Jeon and Daejin Park. <b>LLVM-Based Efficient Hybrid Cache and TCM Memory Allocation for Low-Latency (Under Review)</b> IEEE Embedded Systems Letters, 2025.</p>
 </li>
-<li><p>Gihyeon Jeon and Daejin Park. <b>On Preparation (<font color=red>SCI</font>)</b> In IEEE Transactions on Very Large Scale Integration (VLSI) Systems (TVLSI), 2025.</p>
+<li><p>Gihyeon Jeon and Daejin Park. <b>On Preparation (<font color=red>SCI</font>)</b> IEEE Access, 2024.</p>
 </li>
 <li><p>Gihyeon Jeon and Daejin Park. <b>On Preparation (<font color=blue>KCI</font>)</b> IEMEK Journal of Embedded Systems and Applications, 2025.</p>
 </li>
@@ -120,7 +124,7 @@ Therefore, in special situations with frequent IO communication, scratchpad memo
 </li>
 <li><p>Gihyeon Jeon and Daejin Park. <b>A Dynamic Linking Framework for Efficient QEMU Peripheral Development and Maintenance</b> In IEEE International Conference on Artificial Intelligence in Information and Communication (ICAIIC 2025), 2025.</p>
 </li>
-<li><p>Gihyeon Jeon and Daejin Park. <b>Preparing IEEE ICCD</b>, 2025.</p>
+<li><p>Gihyeon Jeon and Daejin Park. <b>LLVM-based Hybrid Cache and TCM Memory Allocation Optimization for Low-Latency, Energy-Efficient Execution</b> In 2025 ACM SIGBED International Conference on Embedded Software - Time-Centric Reactive Softare (Top Conf. EMSOFT 2025 - TCRS Workshop), 2025.</p>
 </li>
 </ul>
 <h3>Participation in International Conference</h3>
@@ -135,12 +139,10 @@ Therefore, in special situations with frequent IO communication, scratchpad memo
 </li>
 <li><p>IEEE TENCON 2024, Singapore, Singapore</p>
 </li>
-<li><p>IEEE EMSOFT 2025, Taipei, Taiwan</p>
-</li>
-<li><p>IEEE ICCD 2025, Dallas, USA</p>
+<li><p>IEEE ESWEEKS&rsquo; TCRS 2025, Taipei, Taiwan</p>
 </li>
 </ul>
-<p>Last Updated, 2025.04.19</p>
+<p>Last Updated, 2025.09.09</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>
