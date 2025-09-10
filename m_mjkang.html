@@ -101,6 +101,12 @@ E-mail: <i>audwls3158</i> [@] gmail [DOT] com <br />
 <p><img src=member/mjkang_topic3.jpg align=right width=400> This research aims to empower low-performance edge devices with the ability to execute AI tasks seamlessly in real-time. Beyond using lightweight models for simple inference, study focuses on dynamic adaptation to new environmental conditions, enabling real-time sensor control and signal processing tailored to specific contexts. To achieve this objective, the research employs a novel approach. It involves reconstructing sensor data through virtual simulations hosted on a server, which serves as a cloud accelerator for the edge devices. Subsequently, code generation based on these simulations allows for the creation of adaptive algorithms. These algorithms are then transmitted to the edge devices via high-speed parallel communication channels, enabling them to execute AI tasks in real-time while seamlessly adjusting to changing environmental factors. This approach ensures that the edge devices can efficiently respond to dynamic situations, enhancing their overall performance and utility in various application domains. Through this research, several advantages can be obtained, including seamless AI operation, robust execution, and flexible execution with unlimited volume. These benefits enhance the reliability, adaptability, and scalability of AI execution in edge computing environments.</p>
 <h3>Event-Driven Edge AI Software Offloading Scheduling</h3>
 <p><img src=member/mjkang_topic4.jpg align=right width=400> The trend of executing AI software using edge devices&rsquo; own hardware is increasing. However, for tasks requiring large-scale computations such as learning and preprocessing, data is often transmitted to a server for execution and the edge device waits for the response. While the server processes data much faster than the edge device, the uncertainty regarding processing time and required resources causes the edge device to remain in a polling state. Therefore, there is a need for interrupt and event-driven based scheduling of edge AI software. The research focus is on identifying dependencies through AI software analysis, scheduling AI software based on analysis of execution time relative to code and parameter data size, and developing interrupt and event-driven based edge-server parallel processing techniques. By analyzing AI software code in terms of dependencies, size, execution time, and resource usage, the code is restructured to operate in an event-driven manner based on interrupts rather than polling on the edge device. This enables complete parallel processing between the server and the edge, allowing the edge device to operate independently of server performance. Additionally, the interrupt-based approach allows for dynamic responses to server results.</p>
+<h3>Cloud-generated Dynamic Code for Edge Streaming AI</h3>
+<p><img src=member/mjkang_topic5.jpg align=right width=200> Edge devices typically rely on static on-chip flash memory, which makes it difficult to adapt AI software to changing environments. Dynamic code generation in the cloud allows AI modules to be delivered to the edge without storing the entire software locally. This reduces memory constraints and supports flexible execution. This work investigates a cloud-driven code streaming platform for edge devices. The study implements dynamic synthesis, compilation, and linking of AI modules in the cloud. The goal is to realize a runtime execution framework that supports adaptive AI software at the edge.</p>
+<h3>Cloud Emulator Monitoring System for Parameter  Retraining</h3>
+<p><img src=member/mjkang_topic6.jpg align=right width=200> Inference accuracy at the edge often decreases when the input data contains noise or bias. A cloud emulator can observe inference behavior and determine which layers or parameters should be adjusted. Transmitting only selected parameters instead of the full model reduces update time and communication cost. This research proposes a cloud emulator monitoring system that tracks the status of edge inference. It focuses on selective parameter extraction and efficient update transmission. The aim is to improve inference robustness while maintaining low communication overhead.</p>
+<h3>FPGA-Accelerated Incremental Relearning and Partial Update for Robust Edge Inference</h3>
+<p><img src=member/mjkang_topic7.jpg align=right width=200> Incremental learning enables adaptation to new data without retraining the full model, but software-only approaches can be slow and resource-intensive. FPGA acceleration offers parallelism and hardware-level efficiency for incremental updates. This helps to meet real-time requirements in edge inference under changing conditions. The study develops FPGA-based acceleration techniques for incremental learning and partial updates. It explores hardware-software co-design methods to reduce retraining overhead. The focus is on achieving robust edge inference with faster adaptation using FPGA resources.</p>
 <h2>Publications</h2>
 <h3>Journal Publications (<font color=blue>KCI</font> 5, <font color=red>SCI</font> 4)</h3>
 <ul>
@@ -114,9 +120,8 @@ E-mail: <i>audwls3158</i> [@] gmail [DOT] com <br />
 </li>
 <li><p>Myeongjin Kang, Ho Kim, Jungwon Park, Seongbum Yang, Junseo Yun, and Daejin Park. <b>Low-Power Streamable AI Software Runtime Execution based on Collaborative Edge-Cloud Image Processing in Metaverse Applicaitons (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 2022.</p>
 </li>
-<li><p>Myeongjin Kang and Daejin Park. <b>Digital Twin Technique for Effective Simulation of Interoperation with Users and Heterogenous Things (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 27(4):503-510, 2023.</p>
-</li>
-<li><p>Myeongjin Kang and Daejin Park. <b>Flexible Edge-AI Software Execution Architecture based on Cloud-Connected Incremental Learning (<font color=red>SCI</font>) (Under Revision)</b> IEEE Access, 2025.</p>
+<li><p>Myeongjin Kang and Daejin Park. <b>Digital Twin Technique for Effective Simulation of Interoperation with Users and Heterogenous Things (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 27(4):503-510, 2023.
+Myeongjin Kang and Daejin Park. <b>Flexible Edge-AI Software Execution Architecture based on Cloud-Connected Incremental Learning (<font color=red>SCI</font>)</b> IEEE Access, 13:120772-120784, 2025. </p>
 </li>
 <li><p>Myeongjin Kang and Daejin Park. <b>On Preparation (<font color=red>SCI</font>) (On Writing)</b> Applied Sciences, 2025.</p>
 </li>
@@ -141,7 +146,7 @@ E-mail: <i>audwls3158</i> [@] gmail [DOT] com <br />
 </li>
 <li><p>Myeongjin Kang and Daejin Park. <b>Cloud Memory Enabled Code Generation via Online Computing for Seamless Edge AI Operation</b> In IEEE COMPSAC 2024, 2024.</p>
 </li>
-<li><p>Myeongjin Kang and Daejin Park. <b>On Preparation</b> In IEEE International Conference on Mobile Computing and Ubiquitous Networking (ICMU 2025), 2025.</p>
+<li><p>Myeongjin Kang and Daejin Park. <b>Runtime Noise Robust Edge Inference with Incremental Learning and Partial Update using FPGA Accelerator (Under Review)</b> In IEEE International Conference on Consumer Electronics Asia (ICCE-Asia 2025), 2025.</p>
 </li>
 </ul>
 <h3>Patents (Total 1 Patents Pending)</h3>
@@ -177,10 +182,10 @@ E-mail: <i>audwls3158</i> [@] gmail [DOT] com <br />
 </li>
 <li><p>IEEE COMPSAC 2024, Osaka, Japan</p>
 </li>
-<li><p>IEEE ICMU 2025, Busan, Korea</p>
+<li><p>IEEE ICCE-Asia 2025, Busan, Korea</p>
 </li>
 </ul>
-<p>Last Updated, 2025.04.19</p>
+<p>Last Updated, 2025.09.09</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>
