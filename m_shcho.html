@@ -98,13 +98,15 @@ E-mail: <i>rpoets</i> [@] gmail [DOT] com <br />
 <h3>Compressive Sensing</h3>
 <p><img src=member/shcho_topic2.jpg align=right width=300> Compressed sensing (CS) enables accurate signal reconstruction from sub-Nyquist measurements when the signal is sparse or compressible in a certain transform domain, offering an attractive solution for resource constrained biomedical devices. The CS acquisition stage employs a pseudo-random number generator to realize time-domain random under sampling of ECG signals obtained through an AD8232 analog front end and digitized by a 10-bit ADC. For reconstruction, the Fast Iterative Shrinkage-Thresholding Algorithm (FISTA) was optimized using CMSIS-DSP FFT routines, efficient memory placement in Core Coupled Memory RAM(CCMRAM). Experimental results demonstrate that the proposed system achieves a Percentage Root-mean-square Difference Normalized (PRDN) of 24.38% while using only 33% of the Nyquist-rate samples, comparable to MATLAB-based L1 minimization via CVX. Normalization of input data further improved convergence stability and execution time, enabling real-time performance under strict computational and memory constraints. Moreover, analysis of mutual coherence between the sensing matrix and the DFT basis confirms that random under sampling achieves sufficient incoherence for accurate recovery without a dedicated random demodulator. These findings validate the feasibility of end-to-end CS implementation on resource-constrained embedded platforms, making the approach highly suitable for wearable and portable biomedical monitoring systems.</p>
 <h2>Publications</h2>
-<h3>Journal Publications (<font color=blue>KCI</font> 2, <font color=red>SCI</font> 1)</h3>
+<h3>Journal Publications (<font color=blue>KCI</font> 2, <font color=red>SCI</font> 2)</h3>
 <ul>
 <li><p>Seongho Cho and Daejin Park. <b>Electrostatic Coupling Intra-Body Communication Based on FSK Communication and Error Correction (<font color=blue>KCI</font>)</b> IEMEK Journal of Embedded Systems and Applications, 15(4):159-166, 2020. </p>
 </li>
 <li><p>Seongho Cho, Sejong Oh, and Daejin Park. <b>Robust Intra-Body Communication using SHA-ECC-CRC Inversion-based Frequency Shft Keying for Securing Electronic Authentication (<font color=red>SCI</font>)</b> Sensors, 20(21):6056-6073, 2020. </p>
 </li>
-<li><p>Seongho Cho and Daejin Park. <b>FISTA-Based Sparse Signal Recovery in Compressive Sensing: A Lightweight C Implementation (<font color=blue>KCI</font>)</b> IEMEK Journal of Embedded Systems and Applications, 2025.</p>
+<li><p>Seongho Cho and Daejin Park. <b>Embedded C Implementation of FISTA-Based Sparse Signal Recovery in Compressive Sensing (<font color=blue>KCI</font>)</b> IEMEK Journal of Embedded Systems and Applications, 2025.</p>
+</li>
+<li><p>Seongho Cho and Daejin Park. <b>FISTA-Based Sparse Signal Recovery in Compressed Sensing: A lightweight C Implementation (<font color=red>SCI</font>)</b> IEEE Access, 2025.</p>
 </li>
 </ul>
 <h3>Conference Publications (Intl. 3)</h3>
