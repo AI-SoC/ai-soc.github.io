@@ -43,24 +43,19 @@
 <div class="menu-category">Member Profile (20)</div>
 <div class="menu-item"><a href="m_shcho.html">(Ph.D)&nbsp;S.&nbsp;H.&nbsp;Cho</a></div>
 <div class="menu-item"><a href="m_shhong.html">(Ph.D)&nbsp;S.&nbsp;H.&nbsp;Hong</a></div>
-<div class="menu-item"><a href="m_mjkang.html">(Ph.D)&nbsp;M.&nbsp;J.&nbsp;Kang</a></div>
 <div class="menu-item"><a href="m_jhan.html">(Ph.D)&nbsp;J.&nbsp;H.&nbsp;An</a></div>
 <div class="menu-item"><a href="m_shwlee.html">(Ph.D)&nbsp;S.&nbsp;H.&nbsp;Lee</a></div>
 <div class="menu-item"><a href="m_hjyoun.html">(Ph.D)&nbsp;H.&nbsp;J.&nbsp;Yun</a></div>
 <div class="menu-item"><a href="m_yhlee.html" class="current">(Ph.D)&nbsp;Y.&nbsp;H.&nbsp;Lee</a></div>
 <div class="menu-item"><a href="m_shpark.html">(Ph.D)&nbsp;S.&nbsp;H.&nbsp;Park</a></div>
 <div class="menu-item"><a href="m_mjkim.html">(Ph.D)&nbsp;M.&nbsp;J.&nbsp;Kim</a></div>
-<div class="menu-item"><a href="m_bijeong.html">(M.S.)&nbsp;B.&nbsp;I.&nbsp;Jeong</a></div>
 <div class="menu-item"><a href="m_jybyeon.html">(M.S.)&nbsp;J.&nbsp;Y.&nbsp;Byeon</a></div>
-<div class="menu-item"><a href="m_jkphi.html">(M.S.)&nbsp;J.&nbsp;K.&nbsp;Phi</a></div>
 <div class="menu-item"><a href="m_ghjeon.html">(M.S.)&nbsp;G.&nbsp;H.&nbsp;Jeon</a></div>
 <div class="menu-item"><a href="m_hjlee.html">(M.S.)&nbsp;H.&nbsp;J.&nbsp;Lee</a></div>
 <div class="menu-item"><a href="m_jhpark.html">(M.S.)&nbsp;J.&nbsp;H.&nbsp;Park</a></div>
 <div class="menu-item"><a href="m_khseong.html">(M.S.)&nbsp;K.&nbsp;H.&nbsp;Seong</a></div>
 <div class="menu-item"><a href="m_hskim.html">(M.S.)&nbsp;H.&nbsp;S.&nbsp;Kim</a></div>
 <div class="menu-item"><a href="m_jhlee.html">(M.S.)&nbsp;J.&nbsp;H.&nbsp;Lee</a></div>
-<div class="menu-item"><a href="m_yjlee.html">(B.S.)&nbsp;Y.&nbsp;J.&nbsp;Lee</a></div>
-<div class="menu-item"><a href="m_mkjeong.html">(B.S.)&nbsp;M.&nbsp;K.&nbsp;Jeong</a></div>
 <div class="menu-category">Contact</div>
 <div class="menu-item"><a href="contact.html">KNU-Location</a></div>
 <div class="menu-category">2025 Visit Count<script type=text/javascript src=https://www.freevisitorcounters.com/auth.php?id=aed664a85f8e4ef301449cfed4f947df8e641b6f></script><script type=text/javascript src=https://www.freevisitorcounters.com/en/home/counter/1333199/t/1></script></div>
@@ -93,11 +88,13 @@ E-mail: <i>redson0517</i> [@] gmail[DOT] com <br />
 <p>In this work, we implemented a real-time noise reduction AI model based on the Tiny Recurrent U-Net (TRU-Net) using pure C. TRU-Net, a modified variant of U-Net, is well-suited for real-time speech enhancement. Its architecture enables efficient decoupling of computations along the frequency and time axes, supporting frame-by-frame processing in real time. Implementing the model in pure C provides several optimization opportunities for edge environments. In particular, it allows fine-level control over memory and computation, which is critical for optimization on embedded platforms such as DSPs or microcontrollers. Moreover, convolution operations, which constitute a major portion of the computational cost in deep learning models, were a primary target for optimization.</p>
 <p>Through loop unrolling, memory layout optimization, and operation reordering within loops, we reduced memory access latency and maximized CPU utilization. These strategies demonstrate that the proposed model can achieve reliable, high-performance, and low-latency speech enhancement in real-world embedded systems and edge AI devices. Furthermore, based on the insights gained from the C modeling and FPGA implementation, we extended our design considerations toward an NPU architecture optimized for ASIC environments. In particular, we explored power, performance, and area (PPA) trade-offs to derive an optimal structure tailored for edge AI accelerators. This holistic approach ensures that the proposed architecture not only meets the stringent runtime requirements of embedded platforms but also provides a scalable foundation for future ASIC-based NPU deployments.</p>
 <h2>Publications</h2>
-<h3>Journal Publications (<font color=blue>KCI</font> 2)</h3>
+<h3>Journal Publications (<font color=blue>KCI</font> 2, <font color=red>SCI</font> 1)</h3>
 <ul>
 <li><p>Yonghun Lee and Daejin Park. <b>Fast Verilog Simulation using Tcl-based Verification Code Generation for Dynamically Reloading from Pre-Simulation Snapshot (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 27(4):545-551, 2023. </p>
 </li>
 <li><p>Yonghun Lee and Daejin Park. <b>TRU-Net based Real-Time Noise Suppression Model for Speech Enhancement Implemented entirely in C (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 2025.</p>
+</li>
+<li><p>Yonghun Lee and Daejin Park. <b>Full Pure-C Implementation of Real Time Speech Enhancement Model Based on TRU-Net for Edge Device Deployment (Under Review, <font color=red>SCI</font>)</b> ICT Express, 2026.</p>
 </li>
 </ul>
 <h3>Conference Publications (Intl. 6)</h3>
@@ -112,7 +109,7 @@ E-mail: <i>redson0517</i> [@] gmail[DOT] com <br />
 </li>
 <li><p>Yonghun Lee and Daejin Park. <b>Fast Verilog Simulation using Tcl-based Verification Code Generation for Dynamically Reloading from Pre-Simulation Snapshot</b> In IEEE ICAIIC 2023, 2023.</p>
 </li>
-<li><p>Yonghun Lee and Daejin Park. <b>TRU-Net Based AI Model Implementation by Pure C for Real-time Speech Enhancement</b> In IEEE International Conference on Artificial Intelligence in Information and Communication (ICAIIC 2026) (Under Review), 2026.</p>
+<li><p>Yonghun Lee and Daejin Park. <b>TRU-Net Based AI Model Implementation by Pure C for Real-time Speech Enhancement (Top Best Paper Award, Recommended to <font color=red>SCI</font>-Indexed Journal)</b> In IEEE International Conference on Artificial Intelligence in Information and Communication (ICAIIC 2026), 2026.</p>
 </li>
 </ul>
 <h3>Participation in International Conference</h3>
@@ -126,7 +123,7 @@ E-mail: <i>redson0517</i> [@] gmail[DOT] com <br />
 <li><p>IEEE ICAIIC 2026, Tokyo, Japan</p>
 </li>
 </ul>
-<p>Last Updated, 2025.12.04</p>
+<p>Last Updated, 2026.05.04</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>
