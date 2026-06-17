@@ -4,7 +4,7 @@
 <head><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Titillium Web">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="script/aisoc.css" type="text/css" />
-<title>Byungin Jung (M.S. Graduate Student, Hanwha Systems)</title>
+<title>Hyunjae Kim (Combined Graduate Student)</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -59,54 +59,48 @@
 <div class="menu-item"><a href="m_jhlee.html">(M.S.)&nbsp;J.&nbsp;H.&nbsp;Lee</a></div>
 <div class="menu-item"><a href="m_jykim.html">(M.S.)&nbsp;J.&nbsp;Y.&nbsp;Kim</a></div>
 <div class="menu-item"><a href="m_jwjo.html">(M.S.)&nbsp;J.&nbsp;W.&nbsp;Jo</a></div>
-<div class="menu-item"><a href="m_hjkim2.html">(M.S.)&nbsp;H.&nbsp;J.&nbsp;Kim</a></div>
+<div class="menu-item"><a href="m_hjkim2.html" class="current">(M.S.)&nbsp;H.&nbsp;J.&nbsp;Kim</a></div>
 <div class="menu-category">Contact</div>
 <div class="menu-item"><a href="contact.html">KNU-Location</a></div>
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Byungin Jung (M.S. Graduate Student, Hanwha Systems)</h1>
+<h1>Hyunjae Kim (Combined Graduate Student)</h1>
 </div>
 <table class="imgtable"><tr><td>
-<img src="images/bijeong.jpg" alt="main" width="100px" />&nbsp;</td>
-<td align="left"><p>Graduate Student, Embedded System Architect<br /> 
+<img src="images/hjkim2.jpg" alt="main" width="100px" />&nbsp;</td>
+<td align="left"><p>Graduate Student (M.S), Embedded System-on-Chip Integrator<br /> 
 <a href="http://ai-soc.github.io">AI-Embedded System/Software on Chip (AI-SoC) Lab</a><br />
 School of Electronics Engineering, Kyungpook National University <br />
 Phone: +82 053 940 8648 <br />
-E-mail: <i>gms05143</i> [@] naver[DOT] com <br /> 
-[<a href="https://sites.google.com/view/inbetweener/home">Homepage</a>] [<a href="https://scholar.google.com/citations?user=0eCzyS0AAAAJ&amp;hl=ko">Google Scholar</a>] [<a href="svn/mjkim.html">SVN</a>] [<a href="member/bijung_cv.pdf">CV</a>]</p>
+E-mail: <i>jiwonjw040607 </i> [@] google [DOT] com <br /> 
+[<a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=ko&amp;hl=ko&amp;user=LHILPN4AAAAJ">Google Scholar</a>] [<a href="svn/jwjo.html">SVN</a>]</p>
 </td></tr></table>
 <h2>Repository Commit History </h2>
 <table class="imgtable"><tr><td>
-<img src="member/bijung_svn.jpg" alt="main" width="700px" />&nbsp;</td>
+<img src="member/hjkim2_svn.jpg" alt="main" width="700px" />&nbsp;</td>
 <td align="left"></td></tr></table>
 <h2>Introduction</h2>
 <h3>Full Bio Sketch </h3>
-<p>Mr. Jung is now with is now with Hanwha Systems R&amp;D department as system engineer, researching naval combat management system(CMS) architecture, sensors&amp;weapons system integration and verification. He received his B.S. degree in Electronics Engineering in 2013 at Kumoh Institute of Technology (KIT), Republic of Korea. Currently his research interests are Artificial Intelligence appliance/future Cyber security solution integrated with CMS structure for naval battleship.</p>
+<p>Mr. Jo is currently pursuing his undergraduate degree in Electronics Engineering at Kyungpook National University, Daegu, Republic of Korea. His research interests focus on hardware-software co-design, including System-on-Chip (SoC) architectures, embedded systems, edge computing systems, and AI accelerators. His work focuses on addressing memory bottlenecks and exploiting runtime execution characteristics to improve system performance and resource utilization. His research interests include adaptive resource management, memory-aware optimization techniques, and accelerator architectures for AI and edge systems.</p>
 <h2>Research Topic</h2>
-<h3>Containerization and Automated Fault Recovery through Dynamic Runtime Hot-Swapping in NCMS SW</h3>
-<p><img src=member/bijung_topic1.jpg align=right width=300> The ROKN's Naval CMS, designed under the Naval Open Architecture (NOA), employs a modular framework integrating heterogeneous processors and application groups. The legacy design, based on a single OS hosted per device, required exhaustive reliability validation and exhibited limited scalability for future software expansion. To overcome these constraints, this research figured Docker containerization by decomposing the monolithic Naval CMS software into modular containers. Moreover, this research proposes a fault-tolerant scheme enabling in-container self-diagnosis and dynamic runtime replacement, thereby eliminating the need for container redeployment and improving system availability.</p>
+<h3>Compact CPU-Integrated CNN Acceleration Architecture by Streamlining Memory Access for Concurrent Neural Processing </h3>
+<p><img src=member/jwjo_topic1.jpg align=right width=500> The currently widely used fire suppression system is the sprinkler. When a fire occurs and the temperature sensor exceeds the threshold, the sprinkler operates. Depending on the environment, this method may take a long time for the sprinkler to operate from the fime the fire occurs. As an alternative to this problem, I propose a fire detection, notification, and suppression system using AI. Using AI, immediate detection, notification and suppression are possible.</p>
+<p>Convolutional Neural Networks (CNNs) require intensive computation and frequent memory access, which can lead to significant performance bottlenecks in resource-constrained systems. To address these challenges, this study proposes a compact RISC-V-based CNN accelerator integrated with a CPU as a co-processor. The proposed architecture reduces memory overhead through a streaming-based dataflow and on-the-fly data generation while enabling continuous neural processing with a compact buffer structure.
+The accelerator employs weight-stationary systolic arrays and loosely coupled controllers to improve data reuse and overlap memory access with computation. By allowing the CPU and accelerator to operate concurrently, the proposed design improves computational efficiency while reducing memory access costs. This work focuses on efficient hardware architectures for AI acceleration, particularly in systems where memory bandwidth and resource utilization are critical design constraints.</p>
 <h2>Publications</h2>
-<h3>Journal Publications (<font color=blue>KCI</font> 1)</h3>
+<h3>Journal Publications (<font color=red>SCI</font> 0, <font color=blue>KCI</font> 0)</h3>
+<h3>Conference Publications (Intl. 1)</h3>
 <ul>
-<li><p>ByungIn Jung and Daejin Park. <b>Non-Disruptive Container Operation Technology for Naval Combat Systems Based on Dynamic Shared Library Replacement (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 2025.</p>
+<li><p>Jiwon Jo and Daejin Park. <b>Compact CPU-Integrated CNN Acceleration Architecture by Streamlining Memory Access for Concurrent Neural Processing</b> In IEEE COOLChips 2026, 2026.</p>
 </li>
 </ul>
-<h3>Conference Publications (Intl. 2)</h3>
+<h3>Participation in International Conference </h3>
 <ul>
-<li><p>Byungin Jung and Daejin Park. <b>Improvement of Automated Naval Gun Alignment Procedure Assisted by AI</b> In IEEE International Conference on ICT Convergence (ICTC 2024), 2024.</p>
-</li>
-<li><p>Byungin Jung and Daejin Park. <b>Containerization Strategy and Automated Fault Recovery through Dynamic Runtime Hot-Swapping in Naval Combat System Software</b> In IEEE International Conference on Consumer Electronics Asia (ICCE-Asia 2025), 2025.</p>
+<li><p>IEEE COOLChips 2026, Tokyo, Japan</p>
 </li>
 </ul>
-<h3>Participation in International Conference</h3>
-<ul>
-<li><p>IEEE ICTC 2024, Jeju, Korea</p>
-</li>
-<li><p>IEEE ICCE-Asia 2025, Busa, Korea</p>
-</li>
-</ul>
-<p>Last Updated, 2025.12.05</p>
+<p>Last Updated, 2026.06.17</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>
