@@ -101,14 +101,25 @@ E-mail: <i>guswnd0403</i> [@] naver[DOT] com <br />
 <h3>On-Chip Binary Code Compression and Runtime Uncompressed </h3>
 <p><img src=member/hjlee_topic5.jpg align=right width=300> Modern embedded systems, particularly automotive MCUs, face significant memory limitations as software functionality becomes increasingly sophisticated. This research proposes a novel code compression technique that directly manipulates the final compiled output?the Intel HEX format?to overcome these physical hardware constraints. We are developing a custom compression algorithm optimized for the HEX format's structure and implementing an architecture where a bootloader, equipped with decompression logic, uncompresses and executes the application code from Flash memory in real-time at runtime.</p>
 <p>Through this approach, we aim to enable much larger software applications to run on existing hardware. A key validation task of this research is to analyze the trade-off between the benefits of memory savings and the performance overhead incurred by real-time decompression. To this end, we plan to use precision analysis equipment like TRACE32 to accurately measure changes in execution time, thereby proving the practicality and efficiency of our proposed technology.</p>
+<h3>Early Detection of Software-Induced Internal Margin Degradation in Automotive MCUs</h3>
+<p><img src=member/hjlee_topic6.jpg align=right width=500> As SDV software becomes denser and more frequently updated, automotive MCUs can experience internal circuit stress even when no watchdog reset, diagnostic trouble code, or explicit timing violation is observed. This research proposes a lightweight on-chip diagnostic framework that uses resources already available in the Infineon AURIX TC375 MCU. ISR runtime is monitored as a software load indicator, while the statistical variability of on-chip ADC outputs is used as the primary indicator of analog margin degradation caused by software-induced internal stress.</p>
+<p>The framework defines a formal 3-sigma threshold to distinguish latent internal stress from nominal environmental noise. Experiments with computational load, interrupt jitter, resource contention, reduced ADC sampling margin, simultaneous switching noise, and external motor load show that interrupt latency and ADC mean values can remain stable while ADC variability selectively increases. This demonstrates that ADC variability can provide an early, sensorless warning of reliability margin degradation before functional failure, making the method practical for continuous in-field monitoring of automotive ECUs.</p>
+<h3>JSEC: Jitter-to-Step Execution Contracts for Reproducible Distributed ECU-in-the-Loop Co-Simulation </h3>
+<p><img src=member/hjlee_topic7.jpg align=right width=500> Distributed ECU-in-the-Loop co-simulation is essential for validating SDV software with real ECUs and high-fidelity virtual plants, but network jitter can change when ECU control events are admitted into a fixed-step plant model. This research proposes JSEC, a Jitter-to-Step Execution Contract that treats admitted ECU events as a semantic execution stream. Instead of hiding jitter, JSEC maps measured admitted timing gaps into bounded fixed-step plant advancement so that repeated runs can be compared over the same admitted-event timeline while preserving hardware-timed ECU behavior.
+JSEC is implemented on a distributed CARLA-Simulink-Infineon AURIX TC375 platform using a 14-DOF vehicle dynamics model. In a Town03 replay scenario, JSEC reaches a mean R2 of 0.947 and a mean correlation of 0.974 across repeated runs, compared with 0.410/0.782 for conventional asynchronous execution and 0.436/0.774 for JSEC without catch-up. The execution overhead remains small at about 0.79-1.14%, showing that an explicit jitter-to-step contract can substantially improve physical reproducibility in distributed automotive CPS validation.</p>
+<h3>Command-Authority Scheduling for Mixed-Criticality SDV Control</h3>
+<p><img src=member/hjlee_topic8.jpg align=right width=500> As SDV control stacks move toward centralized, multicore, and service-oriented architectures, asynchronous low-criticality services can influence high-criticality actuator-command paths. This research proposes Command-Authority Scheduling (CAS), a bounded service-to-command allocation mechanism that converts low-criticality service outputs into role-constrained authority claims. CAS separates service-requested authority from the command influence actually realized at each command tick, using admission, age/confidence/budget factors, and command-domain-issued authority ceilings before final throttle, brake, and steering synthesis.
+CAS is implemented on a TC375 FreeRTOS ECU-in-the-loop prototype connected to CARLA and evaluated across multiple traffic seeds and service-update settings. The results report zero observed authority-allocation violation rows, allocation of 44.3% of requested aggregate channel-token authority, and a maximum observed command-core execution time of 94 us, which is 0.94% of the 10 ms command period. These results show that CAS can bound low-criticality service influence and command-boundary work while still preserving useful service contribution in mixed-criticality SDV control.</p>
 <h2>Publications</h2>
-<h3>Journal Publication (<font color=red>SCI</font> 1, <font color=blue>KCI</font> 2)</h3>
+<h3>Journal Publication (<font color=red>SCI</font> 2, <font color=blue>KCI</font> 2)</h3>
 <ul>
 <li><p>Hyunjung Lee and Daejin Park. <b>Auto Parking Assistant Control using Human-Activity Feedback-based Embedded Software Emulation (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 2024.</p>
 </li>
 <li><p>Hyunjung Lee and Daejin Park. <b>Real-Time Lightweight Depth Map Estimation Using Stereo Vision and Convolutional Filtering (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 2025.</p>
 </li>
-<li><p>Hyunjung Lee and Daejin Park. <b>On Preparation (<font color=red>SCI</font>)</b> IEEE Access, 2025.</p>
+<li><p>Hyunjung Lee and Daejin Park. <b>Command-Authority Scheduling for Bounded Low-Criticality Service Influence in Mixed-Criticality SDV Control (<font color=red>SCI</font>) (Under Review)</b> IEEE Access, 2026.</p>
+</li>
+<li><p>Hyunjung Lee and Daejin Park. <b>Double Blind Review (<font color=red>SCI</font>) (Under Review)</b> IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2026.</p>
 </li>
 </ul>
 <h3>Conference Publications (Intl. 6)</h3>
@@ -125,6 +136,8 @@ E-mail: <i>guswnd0403</i> [@] naver[DOT] com <br />
 </li>
 <li><p>Hyunjung Lee and Daejin Park. <b>Early Detection of Software-Induced Internal Margin Degradation in Automotive MCUs Using On-Chip ADC Variability</b> In IEEE International Symposium on the Physical and Failure Analysis of Integrated Circuits (IPFA 2026), 2026.</p>
 </li>
+<li><p>Hyunjung Lee and Daejin Park. <b>Double Blind Review</b> In IEEE ESWEEKS&rsquo; International Conference on Embedded Software (EMSOFT 2026), 2026.</p>
+</li>
 </ul>
 <h3>Participation in International Conference</h3>
 <ul>
@@ -140,10 +153,12 @@ E-mail: <i>guswnd0403</i> [@] naver[DOT] com <br />
 </li>
 <li><p>IEEE ICAIIC 2025, Tokyo, Japan</p>
 </li>
-<li><p>IEEE IPFA 2026, Barcelona, Spain</p>
+<li><p>IEEE IPFA 2026, Singapore, Singapore</p>
+</li>
+<li><p>IEEE EMSOFT 2026, Barcelona, Spain</p>
 </li>
 </ul>
-<p>Last Updated, 2026.05.04</p>
+<p>Last Updated, 2026.07.13</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>

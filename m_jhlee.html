@@ -98,23 +98,35 @@ E-mail: <i>1dlwkdgns</i> [@] naver[DOT] com <br />
 <p><img src=member/jhlee_topic4.jpg align=right width=400> Embedded software requires isolation because there is a risk of conflicts during execution. Virtual machines or LXC are too heavy to provide application-level isolation, whereas Docker can be used to isolate applications. However, when using Docker, updating functions at runtime can be time-consuming. To address this, we separated the Docker image into a base image for application execution and dynamic libraries for the actual functional components. The dynamic libraries are stored in Docker volumes and shared among Docker images that use the same libraries, thereby improving consistency and memory efficiency. When launching a container with the base image, the required dynamic libraries are mounted at runtime, enabling the container to perform the same functions as the original image. Moreover, since the dynamic libraries can be modified at runtime, updates can be carried out more efficiently.</p>
 <h3>RAM loaded Firmware Update</h3>
 <p><img src=member/jhlee_topic5.jpg align=right width=400> Unlike in an operating system environment, an MCU does not use virtual memory, and thus the executable code is fixed in flash memory. Due to this characteristic, various difficulties arise during updates, such as programming flash and rebooting the system. To address this, we propose a method that first applies updates to RAM before programming flash. Leveraging the nature of RAM, this approach allows experimental updates of different functions that can be executed immediately at runtime. Building on this basic concept, we propose a structure that enables the MCU’s functionality to diversify at runtime by selectively updating and executing different functions at a single location. The updated functions are accumulated in a function stack, and through a position-function table, the functions in the function stack are mapped to specific code regions, determining which functionality will be executed.</p>
+<h3>Secure Code and Command Transmission for In-Vehicle Dynamic Execution Switching</h3>
+<p><img src=member/jhlee_topic6.jpg align=right width=400> As vehicles transition toward software-defined architectures, in-vehicle systems increasingly require structures that support dynamic execution switching across multiple ECUs. To achieve this, executable code and execution commands can be transmitted at runtime and directly applied to target ECUs. However, since these elements directly affect system behavior, they are vulnerable to threats such as eavesdropping, code injection, command manipulation, replay, and rollback attacks during transmission. To address this, we propose an AES-GCM-based secure transmission structure for in-vehicle dynamic execution switching. The proposed method applies AES-GCM to an existing runtime code transmission and execution switching structure, providing encryption and authentication for metadata, code data, and response messages. To support this, secure packet formats and communication procedures are defined so that transmitted code and commands are applied only after passing authentication verification. In addition, to prevent previously valid packets from being reused, a lightweight monotonically increasing Nonce management method is applied, blocking replay and rollback attacks with minimal memory overhead. The proposed structure was implemented in an MCU environment, and the experimental results confirm that the memory usage and processing overhead remain sufficiently small for resource-constrained embedded systems.</p>
+<h3>RISC-V to ARM Binary Translation Runtime</h3>
+<p><img src=member/jhlee_topic7.jpg align=right width=400> As embedded systems expand into heterogeneous MCU environments, tying executable code to a specific ISA makes code reuse and dynamic deployment difficult. In particular, a binary generated for RISC-V cannot be directly executed on an ARM Cortex-M-based MCU, which means that the same functionality must be built separately for each target architecture. To address this, this study implements a binary translation runtime that enables RISC-V binaries to run in an ARM Cortex-M environment. The proposed structure fetches and decodes RISC-V instructions, then translates them into corresponding ARM instruction sequences based on predefined translation recipes. To handle the structural differences between RISC-V and ARM, the proposed runtime emulates the RISC-V execution context in an ARM environment, allowing the original execution state and control flow to be preserved after instruction translation. For memory access, helper functions are used to distinguish between RISC-V memory and native ARM memory regions and to perform appropriate address handling. To improve execution efficiency, the proposed runtime translates and executes RISC-V instructions at the basic block level. It also supports interrupt handling, allowing interrupt handlers defined in RISC-V code to operate within the translated execution flow. Through this structure, the proposed runtime provides a foundation for executing RISC-V binaries on ARM Cortex-M while preserving execution state, memory access behavior, control flow, and interrupt handling.</p>
+<h3>Tail Service Delay Mitigation for On-Demand Execution Module Streaming</h3>
+<p><img src=member/jhlee_topic8.jpg align=right width=400> In cloud-edge systems, an edge device may request execution modules from the cloud at runtime depending on the service it needs to perform. The requested modules are transmitted in chunks, and each chunk must be received, processed, and stored at the edge before the module becomes executable. If a module is not ready when it is required, the service must wait, resulting in service delay. This problem becomes more serious when multiple module requests overlap, because transmission, processing, and storage resources are shared, and some modules can experience excessively large delay. To address this, we propose a laxity-based execution module chunk scheduling method for mitigating tail service delay. The proposed method computes each module’s laxity by considering both the remaining time until the module is required and the remaining preparation time needed for the module to become executable. Based on this laxity, the method assigns larger scheduling weights to modules with less preparation margin, allowing their chunks to be transmitted and processed more frequently. By redistributing scheduling opportunities in this way, the proposed method suppresses excessive delay in specific modules and reduces tail service delay. Experimental results show that the proposed method achieves lower tail service delay than baseline scheduling policies and reduces the spread of service delay across modules.</p>
 <h2>Publications</h2>
-<h3>Journal Publications (<font color=red>SCI</font> 1, <font color=blue>KCI</font> 2)</h3>
+<h3>Journal Publications (<font color=red>SCI</font> 2, <font color=blue>KCI</font> 2)</h3>
 <ul>
 <li><p>Janghun Lee and Daejin Park. <b>Fast and Intermittent Embedded Software Management based on Dynamic Partial Update Techniques for Intelligent AI-Driven Systems (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 29(3):420-431, 2025.</p>
 </li>
 <li><p>Janghun Lee and Daejin Park. <b>Encrypted SW Segment Construction for Decentralized Runtime Execution over Asymmetric Vehicle Network Architectures (<font color=blue>KCI</font>)</b> Journal of the Korea Institute of Information and Communication Engineering, 2026.</p>
 </li>
-<li><p>Janghun Lee and Daejin Park. <b>On Preparation (<font color=red>SCI</font>)</b> Applied Sciences, 2026</p>
+<li><p>Janghun Lee and Daejin Park. <b>Tail Service Delay Mitigation for On-Demand Execution Module Streaming in Cloud-Edge Systems (<font color=red>SCI</font>) (Under Review)</b> IEEE Embedded Systems Letters, 2026</p>
+</li>
+<li><p>Janghun Lee and Daejin Park. <b>On Preparation (<font color=red>SCI</font>)</b> Computers, 2026</p>
 </li>
 </ul>
-<h3>Conference Publications (Intl. 3)</h3>
+<h3>Conference Publications (Intl. 5)</h3>
 <ul>
 <li><p>Janghun Lee and Daejin Park. <b>Fast Embedded Software Management based on Dynamic Partial Update Techniques via IR for Intelligent AI-Driven Systems (Under Review)</b> In IEEE Conference on Robotic Computing (IRC), 2024.</p>
 </li>
 <li><p>Janghun Lee and Daejin Park. <b>Docker based Embedded Software Management and Update with Dynamic Library Techniques</b>, IEEE International Conference on Consumer Electronics - Taiwan (ICCE-TW 2025), 2025. </p>
 </li>
 <li><p>Janghun Lee and Daejin Park. <b>Concurrent Multi-tasking using Metamorphic SW Replacement</b> In IEEE International Conference on Embedded MulticoreManycore Systems-on-Chip (Flagship Conf. MCSoC 2025), 2025.</p>
+</li>
+<li><p>Janghun Lee and Daejin Park. <b>Tail Service Delay Mitigation for On-Demand Execution Module Streaming in Cloud-Edge Systems (<font color=red>SCI</font>) (Under Review)</b> IEEE Embedded Systems Weeks (ESWEEK) TCRS Workshop, 2026</p>
+</li>
+<li><p>Janghun Lee and Daejin Park. <b>(Under Review)</b> IEEE International Conference on Parallel and Distributed Systems (ICPADS 2026), 2026</p>
 </li>
 </ul>
 <h3>Participation in International Conference </h3>
@@ -125,8 +137,12 @@ E-mail: <i>1dlwkdgns</i> [@] naver[DOT] com <br />
 </li>
 <li><p>IEEE MCSoC 2025, Singapre, Singapore</p>
 </li>
+<li><p>IEEE EMSOFT TCRS 2026, Barcelona, Spain</p>
+</li>
+<li><p>IEEE ICPADS 2026, Tokyo, Japan</p>
+</li>
 </ul>
-<p>Last Updated, 2026.05.04</p>
+<p>Last Updated, 2026.07.13</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>
