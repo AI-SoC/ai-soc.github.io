@@ -122,53 +122,18 @@ Post-layout simulations in a 28-nm CMOS process demonstrate that the proposed de
 <p><img src=member/shpark_topic10.jpg align=right width=600> Modern neural processing units (NPUs) are widely used for large-scale deep learning inference, including CNNs and large language models. Although existing compiler stacks expose structural hardware information through hardware abstraction layers, they often lack visibility into runtime execution behavior such as memory interference, phase transitions, KV-cache pressure, and numerical stress. This limitation makes it difficult for compilers to adapt optimization strategies to changing execution conditions. 
 This research proposes a context-aware adaptive NPU compilation framework that transforms low-level runtime signals into compiler-visible execution abstractions. An on-chip abstraction engine tags hardware events with instruction metadata and aggregates them over meaningful execution segments. In addition, a dynamic event control mechanism filters transient fluctuations and reports only sustained runtime patterns. These structured contexts are then used by an MLIR-based compiler to select suitable optimization strategies such as high-throughput execution, memory-efficient scheduling, low-power operation, or numerical-stability-oriented compilation.
 Evaluation using a fabricated heterogeneous dual-NPU prototype and multiple open-source NPU workflows shows that the proposed framework improves latency, energy efficiency, and tail-latency behavior compared to fixed-threshold or direct runtime-reaction baselines. By elevating runtime behavior into a portable compiler abstraction, this work demonstrates a hardware-software co-design approach for adaptive NPU optimization across diverse LLM and CNN workloads.</p>
-<h2>Chip Design</h2>
-<h3>Tile-based CNN Accelerator (2023-05-01) </h3>
-<p><img src=member/shpark_chip1.jpg align=right width=300> IEEE COOL Chips 2024, Power-Efficient CNN Accelerator Design with Bit-Separable Radix-4 Booth Multiplier</p>
+<h2>Chip Design History</h2>
+<p><img src=member/shpark_chip1.jpg width=800> </p>
 <ul>
-<li><p>Commercial MCU design</p>
+<li><p>Conducted multiple MPW tape-outs across various foundries to validate NPU architectures in silicon.</p>
 </li>
-<li><p>DMA module design for Off-chip Interface</p>
+<li><p>Statistically analyzed AI workload characteristics, including activation and weight distributions, sparsity, effective bit-width, and bit-level switching activity.</p>
 </li>
-<li><p>GCC compile environment setup for SW execution</p>
+<li><p>Developed a bit-separable multiplier that exploits output activation sparsity to reduce redundant computation and improve energy efficiency. (IEEE MICRO, HotChips)</p>
 </li>
-<li><p>Stimulus generator in C code</p>
+<li><p>Optimized compressor-tree architectures based on frequently occurring bit patterns and carry-generation behavior in AI workloads. (TVLSI)</p>
 </li>
-<li><p>Custom UART driver</p>
-</li>
-<li><p>SPI PHY design and verification</p>
-</li>
-<li><p>Custom radix-4 Booth multiplier design</p>
-</li>
-<li><p>AXI-4 based FIFO and on-chip bus design</p>
-</li>
-<li><p>Linker script adjustment for CNN data alignment</p>
-</li>
-<li><p>PCB design with various IO peripherals</p>
-</li>
-</ul>
-<h3>Full Custom Bit-Separable Radix-4 Booth Multiplier </h3>
-<p><img src=member/shpark_chip2.jpg align=right width=150> IEIE 2024, Design of Bit-Separable Radix-4 Booth Multiplier</p>
-<ul>
-<li><p>Full custom multiplier design with bit-separable mechanism</p>
-</li>
-<li><p>Experience with full custom design tools; Cadence Virtuoso, Synopsys Custom Compiler, Laker</p>
-</li>
-<li><p>Power consumption simulation with Synopsys PrimePower</p>
-</li>
-<li><p>Various primitive cell design (NAND, NOR, FF, INV, MUX…)</p>
-</li>
-</ul>
-<h3>Full Custom SRAM PIM for Edge CNN Training</h3>
-<p><img src=member/shpark_chip3.jpg align=right width=150> </p>
-<ul>
-<li><p>SRAM Cell design (using thin cell) from scratch</p>
-</li>
-<li><p>Spice simulation using digital vector file format</p>
-</li>
-<li><p>Standard cell design flow</p>
-</li>
-<li><p>500nm fabrication process, maximum 75MHz clock speed</p>
+<li><p>Established a workload-aware hardware optimization methodology spanning statistical analysis, circuit design, chip implementation, and post-silicon validation.</p>
 </li>
 </ul>
 <h2>Publications</h2>
