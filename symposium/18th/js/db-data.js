@@ -16,39 +16,37 @@ DB = new Array();
 PS = new Array();
 
 
-// Session 1: Near-Memory & Memory Processing Systems
-DB[00] = new Array("1A", "color-oral-01", "1A", "May. 28, 2026 (Wednesday)", "10:00", "Room A", "Chair: Daejin Park (Kyungpook National University, Korea)", "Near-Memory & Memory Processing Systems", "1A-1", "BAAP - Coupling Compute-in-SRAM with DRAM Banks for Near-Memory Processing", "<b>Heejee Yun, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "1B");
-DB[01] = new Array("", "", "", "", "", "", "", "", "1A-2", "dae4hls - Exposing Memory-Level Parallelism for High-Level Synthesis using Explicit Decoupling", "<b>Gihyun Jeon, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
-DB[02] = new Array("", "", "", "", "", "", "", "", "1A-3", "E-ReCON: An Energy- and Resource-Efficient Precision-Configurable Sparse nvCIM Macro for Edge", "<b>Jiwon Jo, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
-DB[03] = new Array("", "", "", "", "", "", "", "", "1A-4", "A Software Caching Runtime for Embedded NVRAM Systems", "<b>Jaehyun Park, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
+// Session 1: System-on-Chip (SoC) & PIM Architecture
+DB[00] = new Array("1A","color-oral-01","1A","March. 18, 2026 (Wednesday)","10:00","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","System-on-Chip & PIM Architecture","1A-1","TokenStack: A Heterogeneous HBM-PIM Architecture and Runtime for Efficient LLM Inference","<b>Heejee Yun, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","1B");
+
+DB[01] = new Array("","","","","","","","","1A-2","PipeRTL: Timing-Aware Pipeline Optimization at IR-Level for RTL Generation","<b>Seunghyun Park, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
+
+DB[02] = new Array("","","","","","","","","1A-3","A Booth-Based Digital Compute-in-Memory Macro With Bitwise-Efficient Multiphase Accumulation","<b>Hoseong Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
+
+DB[03] = new Array("","","","","","","","","1A-4","A Coherence-Aware Runtime Reconfigurable System-on-Chip for Efficient Language Model Inference","<b>Jiwon Jo, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
+
+DB[04] = new Array("","","","","","","","","1A-5","Characterizing Digital DRAM PIM through Modeling and Benchmarking","<b>Hyunjae Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
+
+DB[05] = new Array("","","","","","","","","1A-6","A Queueing Model for Memory Controller Scheduler Subject to DRAM Column Access Timing Constraints","<b>Joonghyun Ahn, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
 
 
-// Session 2: Acceleration & Neural Networks for Hardware
-DB[04] = new Array("1B", "color-oral-02", "1B", "May. 28, 2026 (Wednesday)", "11:00", "Room A", "Chair: Daejin Park (Kyungpook National University, Korea)", "Acceleration & Neural Networks for Hardware", "1B-1", "DCT: Dimensional Collapse Tiling for Tensor Operators on Attention Accelerators", "<b>Seunghyun Park, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "1C");
-DB[05] = new Array("", "", "", "", "", "", "", "", "1B-2", "Ariel-ML - Embedded Rust Leveraging Multicore for Neural Networks on Heterogeneous Microcontrollers", "<b>Minjung Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
-DB[06] = new Array("", "", "", "", "", "", "", "", "1B-3", "A Feature Distillation Network to Enable Object Detection on an FPGA Platform in Poor Visibility Conditions", "<b>Hyunjun Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
-DB[07] = new Array("", "", "", "", "", "", "", "", "1B-4", "Time-Predictable Acceleration of Deep Neural Networks on FPGA SoCs with Multi-Core DPUs", "<b>Hyunjae Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
+// Session 2: AI-Enabled Embedded Systems & Networks
+DB[06] = new Array("1B","color-oral-02","1B","March. 18, 2026 (Wednesday)","11:00","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","AI Embedded Systems & Networks","1B-1","Joint Scheduling of Sensing Data Offloading and Edge Inference for Multi-UAV Networks","<b>Minjung Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","1C");
+
+DB[07] = new Array("","","","","","","","","1B-2","AIRSTONE: Open sourced hardware accelerators and tools for efficient and safe embodied AI computing","<b>Hyunjung Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
+
+DB[08] = new Array("","","","","","","","","1B-3","Energy-Efficient FPGA-Based Accelerator Architecture for Real-Time Edge AI Applications in Embedded Systems","<b>Yonghun Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
 
 
-// Session 3: RISC-V & Reconfigurable Processors
-DB[08] = new Array("1C", "color-oral-03", "1C", "May. 28, 2026 (Wednesday)", "13:00", "Room A", "Chair: Daejin Park (Kyungpook National University, Korea)", "RISC-V & Reconfigurable Processors", "1C-1", "Buckbeak: A 1.2 TFLOPS W Reconfigurable Vector Scalar RISC-V Processor for Precision Scalable", "<b>Hoseong Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "1D");
-DB[09] = new Array("", "", "", "", "", "", "", "", "1C-2", "A Self-Testing Framework for Verification and Validation of a RISC-V-Based System with a Co-processor", "<b>Joonghyun Ahn, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
-DB[10] = new Array("", "", "", "", "", "", "", "", "1C-3", "A Lightweight Convolution-Aware RISC-V Soft Processor for Intelligent Wearable Systems", "<b>Junyeong Cha, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
+// Session 3: Compiler, Simulation & Runtime Framework
+DB[09] = new Array("1C","color-oral-03","1C","March. 18, 2026 (Wednesday)","13:00","Room A","Chair: Daejin Park (Kyungpook National University, Korea)","Compiler, Simulation & Runtime Framework","1C-1","Interaction Tree Semantics for RISC-V: Bridging Compiler and Hardware Verification","<b>Gihyun Jeon, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","1D");
+
+DB[10] = new Array("","","","","","","","","1C-2","ncsim: A Lightweight Simulator for Networked Edge Computing with Wireless Interference Modeling","<b>Janghun Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
+
+DB[11] = new Array("","","","","","","","","1C-3","GTaP: A GPU-Resident Fork-Join Task-Parallel Runtime with a Pragma-Based Interface","<b>Jaeyoung Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
+
+DB[12] = new Array("","","","","","","","","1C-4","Accelerating Precise End-to-End Simulation: Latency-Sensitive Many-core System Modeling","<b>Seungseop Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>","","","");
 
 
-// Session 4: Edge Computing & Intelligent Systems
-DB[11] = new Array("1D", "color-oral-04", "1D", "May. 28, 2026 (Wednesday)", "14:00", "Room A", "Chair: Daejin Park (Kyungpook National University, Korea)", "Edge Computing & Intelligent Systems", "1D-1", "TinySLFL: A Flash-Endurance-Aware Federated Edge Learning Framework with Layer-Wise Delayed", "<b>Seungseop Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "1E");
-DB[12] = new Array("", "", "", "", "", "", "", "", "1D-2", "Efficient Layer-Granularity Unloading for LLMs in Edge Computing", "<b>Yonghun Lee, Daejin Park</b> (Gaonchips, Kyungpook National University, Korea)<br>", "", "", "");
-DB[13] = new Array("", "", "", "", "", "", "", "", "1D-3", "Online Algorithms for Data Sharing-Aware Task Allocation in Edge Computing Systems", "<b>Myeongjin Kang, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
-DB[14] = new Array("", "", "", "", "", "", "", "", "1D-4", "GraphDelta: A distributed incremental framework for efficient dynamic graph computing in edge intelligence", "<b>Sunghoon Hong, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
-
-
-// Session 5: Optimization & System Applications
-DB[15] = new Array("1E", "color-oral-05", "1E", "May. 28, 2026 (Wednesday)", "15:00", "Room A", "Chair: Daejin Park (Kyungpook National University, Korea)", "Optimization & System Applications", "1E-1", "Provisioning to Runtime Optimization of a 100 MW-Scale AI Cluster", "<b>Janghun Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "1F");
-DB[16] = new Array("", "", "", "", "", "", "", "", "1E-2", "HIRL: Hierarchical Reinforcement Learning for Coordinated Resource Management in Heterogeneous", "<b>Jaeyoung Kim, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
-DB[17] = new Array("", "", "", "", "", "", "", "", "1E-3", "A high-throughput pipelined FPGA and ASIC architecture for real-time multimodal ECG-PCG cardiac", "<b>Dongkyu Lee, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
-DB[18] = new Array("", "", "", "", "", "", "", "", "1E-4", "Battery Management Systems Introduction", "<b>Kihyeon Seong, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
-DB[19] = new Array("", "", "", "", "", "", "", "", "1E-5", "A Novel Field-Programmable Gate Array-Based Self-Sustaining Current Balancing Approach for Silicon", "<b>Jongyun Byeon, Daejin Park</b> (Kyungpook National University, Korea)<br>", "", "", "");
-
-DB[20] = new Array("", "", "", "", "", "", "", "", "1E-6", "End of Symposium", "", "", "", "");
+DB[13] = new Array("","","","","","","","","1C-5","End of Symposium","","","","");
 
