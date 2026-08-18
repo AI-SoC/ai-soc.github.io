@@ -100,21 +100,37 @@ Finally, His research objective is to integrate the low-performance edge devices
 <p>To improve efficiency, the proposed accelerator employs a systolic tile array of multiply-accumulate (MAC) units. The array includes two specialized MAC tile types: performance tiles, which support dual-thread or high-resolution modes and are optimized for throughput, and efficiency tiles, which are optimized for low power. The inherently parallel dataflow of this tile array accelerates matrix multiplication.</p>
 <p>Even if the computation runs quickly, it’s meaningless if the data aren’t ready just as fast. To balance compute and I/O in accelerator and memory interface, the accelerator integrates a high-throughput memory interface. A planarized matrix-reordering stage reshapes tensors and redistributes data across banks, converting compressed CNN matrices into contiguous, linear access streams. Operation parameters (e.g., kernel size, input dimensions, stride) determine the reordering schedule. This reduces the memory-access footprint, improves burst efficiency, and supplies multiple operands per cycle.</p>
 <p>In conclusion, we aim to reformulate CNN operations as lower-dimensional matrix multiplications to increase processing performance and reduce energy consumption. With this accelerator architecture, our goal is to enhance the efficiency of AI workloads so they run seamlessly even on mobile devices with limited computational resources.</p>
+<h3>FPGA Accelerator for Sparse Neural Networks Using Bitmap-Based Memory Reorganization and SIMD Processing.</h3>
+<p><img src=member/hskim_topic4.jpg align=right width=500> CNN and DNN inference is increasingly required on mobile, embedded, and edge devices, where memory bandwidth, power budget, and on-chip buffers are all limited. Pruned (sparse) networks reduce the raw computation count, but sparse inference on such devices is limited not by arithmetic capacity but by the memory wall of compressed formats: coordinate-based representations such as COO and CSR require index reconstruction, pointer interpretation, and irregular memory accesses before every MAC operation, which stalls SIMD-style compute arrays that depend on regular, continuous operand streams.</p>
+<p>This work resolves the irregularity one stage earlier, at the memory layout level, rather than at the compute side. Pruned INT8 weights are stored with 1-bit bitmap indicators and an address-free, front-packed value stream, so each non-zero element costs only a single index bit and no coordinate reconstruction exists in the datapath. Here the bitmap is used as a layout decision variable, not merely a per-operand valid signal: rows whose bitmaps share similar patterns are grouped at model-load time, so that one address-generation stream serves several output rows and fetched activation data is reused across the group.</p>
+<p>The architecture is organized as a heterogeneous HPS?FPGA system. The Hard Processor System handles the sequential decision work?bitmap pre-analysis, row-similarity grouping, and tile scheduling?while the FPGA fabric executes a cluster-organized SIMD MAC array under a row-wise refined outer-product scheme. Operands are gated directly by bitmap bits, so zero-skipping requires no extra control logic, scatter, or crossbar network, which is what allows the design to fit a small device.</p>
+<p>Implemented and timing-closed on a Cyclone V SoC FPGA (DE1-SoC, 12 clusters / 48 PEs), the accelerator reaches up to 16.5 GOP/s (86% of device peak) in on-board measurements over four CNNs, and sustains 1.24× CSR throughput with about half the memory traffic. The resource analysis further identifies the on-chip memory-block count?not logic or arithmetic capacity?as the true scaling constraint, proving that memory-side reorganization is what lets a sparsity-aware accelerator fit a small low-cost FPGA.</p>
+<h3>Sparse Neural Network FPGA Accelerator with Bitmap Indexing and Row-Similarity-Based Address Reuse</h3>
+<p><img src=member/hskim_topic5.jpg align=right width=300> Extending the bitmap accelerator, this work asks where indexing optimizations actually pay off at the system level. Compressed sparse formats save storage, but reducing local decoding cost does not necessarily reduce end-to-end inference time: what ultimately matters in an edge accelerator is how predictably and continuously data can be supplied to the processing units, which requires co-designing the data representation, memory hierarchy, and execution scheduling together.</p>
+<p>To cut the position-restoration cost, a hierarchical codebook replaces repeated bitmap decoding with lookups. Each 64-bit bitmap is split into 16-bit signatures; signatures that match exactly reuse pre-computed bit-count and position-packing metadata through per-cluster L1 and shared L2 codebook tables, while unmatched signatures are handled by a bit-identical fallback scanner?so the codebook only shortens decoding latency and never affects computational correctness. Deterministic prefetch, non-blocking miss handling, and L2 lookahead further hide the lookup latency behind ongoing computation.</p>
+<p>A key methodological feature is that every optimization element?codebook, prefetch, non-blocking miss, lookahead, pinning, and gapless pair delivery?is toggled independently via Condition State Registers mode bits on a single bitstream. Combined with hardware cycle counters inside the FPGA and post-fit static timing analysis, this allows each element's contribution to be measured in isolation on the same hardware, instead of being inferred from aggregate network-level latency alone.</p>
+<p>On-board results across four networks reveal a producer?consumer imbalance as the dominant system behavior: the cycles saved by the codebook are absorbed by pair-FIFO back-pressure, because the MAC consumer is slower than the bitmap producer, so indexing-side gains stay hidden. In contrast, gapless pair delivery on the consumer side removes the fixed idle cycles of the MAC array and yields a real median speedup of about 1.2× with bit-identical outputs. This establishes a system-level design guideline: accelerator performance is governed by balancing producer and consumer throughput under limited resources, not by local indexing acceleration alone.</p>
 <h2>Publications</h2>
 <h3>Journal Publications (<font color=red>SCI</font> 1, <font color=blue>KCI</font> 1)</h3>
 <ul>
-<li><p>Hoseung Kim and Daejin Park. <b>Blind Review (<font color=blue>KCI</font>) (Under Review)</b> IEMEK Journal of Embedded Systems and Applications, 2026.</p>
+<li><p>Hoseong Kim and Daejin Park. <b>An FPGA Accelerator for Sparse Neural Networks Using Bitmap-Based Memory Reorganization and SIMD Processing (<font color=blue>KCI</font>)</b> IEMEK Journal of Embedded Systems and Applications, 2026.</p>
 </li>
-<li><p>Hoseung Kim and Daejin Park. <b>On Preparation (<font color=red>SCI</font>)</b> IEEE Access, 2026</p>
+<li><p>Hoseong Kim and Daejin Park. <b>On Preparation (<font color=red>SCI</font>)</b> IEEE Access, 2026</p>
 </li>
 </ul>
-<h3>Conference Publications (Intl. 3)</h3>
+<h3>Conference Publications (Intl. 6)</h3>
 <ul>
-<li><p>Hoseung Kim and Daejin Park. <b>Low-Power High Speed CNN Accelerator with Matrix Reordering Techniques for Small Footprint Memory Access</b> In  IEEE International Conference on Artificial Intelligence in Information and Communication (ICAIIC 2025), 2025.</p>
+<li><p>Hoseong Kim and Daejin Park. <b>Low-Power High Speed CNN Accelerator with Matrix Reordering Techniques for Small Footprint Memory Access</b> In IEEE International Conference on Artificial Intelligence in Information and Communication (ICAIIC 2025), 2025.</p>
 </li>
-<li><p>Hoseung Kim and Daejin Park. <b>Low Power CNN Accelerator Memory Interface with Small Footprint Memory Access</b>, In IEEE Symposium on Low-Power and High-Speed Chips and Systems (Flagship Conf. COOLChips), 2025.</p>
+<li><p>Hoseong Kim and Daejin Park. <b>Low Power CNN Accelerator Memory Interface with Small Footprint Memory Access</b>, In IEEE Symposium on Low-Power and High-Speed Chips and Systems (Flagship Conf. COOLChips), 2025.</p>
 </li>
 <li><p>Hoseong Kim and Daejin Park. <b>Data Allocation Rearrangement on CNN Accelerator based on Reshaping Systolic Tile Array using Planarized Matrix Reordering Techniques</b> In IEEE International Conference on Embedded MulticoreManycore Systems-on-Chip (Flagship Conf. MCSoC 2025), 2025.</p>
+</li>
+<li><p>Hyunjung Lee, Hoseong Kim, and Daejin Park. <b>Architecture-Aware Neural Compression for TriCore Firmware using Knowledge Distillation</b> In IEEE International Conference on Artificial Intelligence in Information and Communication (ICAIIC 2026), 2026.</p>
+</li>
+<li><p>Hoseong Kim and Daejin Park. <b>FPGA Accelerator for Sparse Neural Networks Using Bitmap-Based Memory Reorganization and SIMD Processing</b> In IEEE Asia Pacific Conference on Circuits and Systems (APCCAS 2026), 2026.</p>
+</li>
+<li><p>Hoseong Kim and Daejin Park. <b>A Density-Adaptive Unified-Mask Decoder for Sparse Weights on FPGA</b> In IEEE Symposium on Low-Power and High-Speed Chips and Systems (Flagship Conf. COOLChips 2027) (Under Review), 2027.</p>
 </li>
 </ul>
 <h3>Participation in International Conference</h3>
@@ -127,10 +143,8 @@ Finally, His research objective is to integrate the low-performance edge devices
 </li>
 <li><p>IEEE APCCAS 2026, Fukuoka, Japan</p>
 </li>
-<li><p>IEEE A-SSCC 2026, Taipei, Taiwan</p>
-</li>
 </ul>
-<p>Last Updated, 2026.07.13</p>
+<p>Last Updated, 2026.08.19</p>
 <div id="footer">
 <div id="footer-text">This page was generated by our compiler @ copyright reserved (AI-S<sup><font size=1>2</font></sup>oC Lab<img src=images/logo.jpg width=20 >)
 </div>
